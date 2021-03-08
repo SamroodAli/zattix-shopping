@@ -64,6 +64,11 @@ li {
   padding: 0;
 }
 
+.bg-dark-blue {
+  background-color: antiquewhite;
+}
+
+
 // header styles
 header {
   .navbar {
@@ -98,7 +103,7 @@ main {
   // carousel styling
   .carousel-main {
     &.carousel {
-      background-color: antiquewhite;
+      background-color: #e3e3e3;
 
       // caoursal slides
       .carousel-item {

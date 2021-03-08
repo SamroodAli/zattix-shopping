@@ -54,6 +54,10 @@ li {
   padding: 0;
 }
 
+.bg-dark-blue {
+  background-color: antiquewhite;
+}
+
 header .navbar .navbar-toggler {
   border: 0.5px solid rgba(173, 119, 57, 0.356);
 }
@@ -80,7 +84,7 @@ main .jumbotron .jumbotron-element {
 }
 
 main .carousel-main.carousel {
-  background-color: antiquewhite;
+  background-color: #e3e3e3;
 }
 
 main .carousel-main.carousel .carousel-item .carousel-img {
