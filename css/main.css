@@ -62,4 +62,9 @@ main .product-card {
 main .product-card img {
   width: 100%;
 }
+
+footer img {
+  height: 4rem;
+  width: 4rem;
+}
 /*# sourceMappingURL=main.css.map */
