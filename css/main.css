@@ -112,10 +112,6 @@ main .carousel-main .carousel-indicators li:active {
   color: red;
 }
 
-main .product-section {
-  padding: 3rem 10rem;
-}
-
 main .product-card {
   display: -ms-grid;
   display: grid;
@@ -153,5 +149,11 @@ footer img {
 .search-main img {
   height: 10rem;
   width: 10rem;
+}
+
+@media (min-width: 768px) {
+  .product-section {
+    padding: 3rem 10rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

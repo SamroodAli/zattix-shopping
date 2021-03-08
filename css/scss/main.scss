@@ -127,10 +127,6 @@ main {
     }
   }
 
-  .product-section {
-    padding: 3rem 10rem;
-  }
-
   .product-card {
     display: grid;
     justify-content: center;
@@ -162,5 +158,11 @@ footer {
   img {
     height: 10rem;
     width: 10rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-section {
+    padding: 3rem 10rem;
   }
 }
