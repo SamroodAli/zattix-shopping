@@ -86,3 +86,9 @@ footer {
     width: 4rem;
   }
 }
+
+// search page styles
+.search-main {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+}
