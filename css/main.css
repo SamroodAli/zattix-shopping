@@ -55,11 +55,11 @@ main .jumbotron .jumbotron-element {
   height: 3rem;
 }
 
-main .carousel {
+main .carousel-main.carousel {
   background-color: antiquewhite;
 }
 
-main .carousel-img {
+main .carousel-main.carousel .carousel-img {
   height: 20rem;
   width: 20rem;
 }

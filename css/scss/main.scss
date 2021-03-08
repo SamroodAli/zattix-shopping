@@ -66,13 +66,16 @@ main {
     }
   }
 
-  .carousel {
-    background-color: antiquewhite;
-  }
+  // carousel styling
+  .carousel-main {
+    &.carousel {
+      background-color: antiquewhite;
 
-  .carousel-img {
-    height: 20rem;
-    width: 20rem;
+      .carousel-img {
+        height: 20rem;
+        width: 20rem;
+      }
+    }
   }
 
   .product-card {
