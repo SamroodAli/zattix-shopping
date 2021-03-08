@@ -2,6 +2,15 @@ $charcoal: #353535;
 $red: #a44656;
 
 //general theme styles
+
+li {
+  list-style: none;
+}
+
+* {
+  border-color: $red;
+}
+
 .red {
   color: $red;
 }
