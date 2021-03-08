@@ -1,4 +1,20 @@
-header .navbar img {
+.red {
+  color: #A44656;
+}
+
+.grey {
+  color: #353535;
+}
+
+.bg-red {
+  background-color: #A44656;
+}
+
+.bg-grey {
+  background-color: #353535;
+}
+
+header .navbar s img {
   width: 3rem;
   height: 3rem;
   border-radius: 50%;

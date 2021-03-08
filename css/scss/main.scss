@@ -1,7 +1,27 @@
+$grey: #353535;
+$red: #A44656;
+
+//general theme styles
+.red {
+  color: $red;
+}
+
+.grey {
+  color: $grey;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.bg-grey {
+  background-color: $grey;
+}
+
 // header styles
 header {
   .navbar {
-    img {
+    s img {
       width: 3rem;
       height: 3rem;
       border-radius: 50%;
