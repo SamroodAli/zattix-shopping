@@ -16,7 +16,9 @@
 </head>
 
 <body>
-    <header>
+    <!-- header -->
+    <header class="container-fluid px-0">
+        <!-- navbar top -->
         <nav
             class="navbar navbar-light navbar-expand-md d-md-flex align-items-md-center bg-charcoal position-fixed w-100 p-1 p-lg-2">
             <a class="navbar-brand" href="#"><i class="fa fa-shopping-basket red mr-2"></i><span
@@ -66,7 +68,129 @@
                 </div>
             </div>
         </nav>
+        <!-- section for md to large screens -->
+        <div>
+        </div>
     </header>
+    <main class="container-fluid">
+
+        <!-- top category info -->
+        <div class="row">
+            <div class="container-fluid p-0">
+                <div class="jumbotron mt-5 mb-0" style="text-align: center;">
+                    <h1>ZATTIX</h1>
+                    <p>Buying and Selling could not be simpler than this</p>
+                    <div class="row row-cols-1 row-cols-md-4 justify-content-center">
+                        <div class="dropdown d-inline"><button class="btn dropdown-toggle" aria-expanded="false"
+                                data-toggle="dropdown" type="button">All Departments </button>
+                            <!-- drop down -->
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a
+                                    class="dropdown-item" href="#">Second
+                                    Item</a><a class="dropdown-item" href="#">Third Item</a>
+                            </div>
+                        </div>
+                        <input type="search" placeholder="What are you searching for ?" />
+                        <a href="search.html" class="btn btn-dark bg-charcoal text-light">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- footer -->
+    <footer class="container-fluid">
+        <div class="row row-cols-1 row-cols-lg-4">
+            <div>
+                <img src="./assets/logo.svg" alt="">
+                <p class=d-inline>ZATTIX</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia asperiores nobis voluptatum
+                    blanditiis
+                    ipsa
+                    ut
+                    dolores soluta voluptates voluptate. Perferendis temporibus perspiciatis iste itaque
+                    consequuntur,
+                    fugiat
+                    sed
+                    vero nostrum at!</p>
+            </div>
+            <div>
+                <h5>Categoris</h5>
+                <div class="d-flex">
+                    <div>
+                        <ul>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                            <li>Piano</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <ul>
+                        <li>Home</li>
+                        <li>Cart</li>
+                        <li>My Account</li>
+                        <li>Orders</li>
+                        <li>FAQ</li>
+                        <li>Terms and Conditions</li>
+                        <li>Contact Us</li>
+                        <li>License</li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <form action="#" class="d-flex">
+                    <div>
+                        <label for="country">
+                            COUNTRY
+                        </label>
+                        <label for="language">
+                            LANGUAGE
+                        </label>
+                        <label for="currency">
+                            CURRENCY
+                        </label>
+                    </div>
+                    <div>
+                        <input type="text" id="country" placeholder="India">
+                        <input type="text" id="language" placeholder="English">
+                        <input type="text" id="currency" placeholder="$ Dollar">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="d-md-flex justify-content-between">
+            <div>
+                <ul class="d-md-flex flex-nowrap">
+                    <li>Zattix.com</li>
+                    <li>Created by Samrood Ali</li>
+                    <li>Microver Project</li>
+                    <li>Copyright</li>
+                    <li>All Rights Reserved By Mohammed Awad</li>
+                </ul>
+            </div>
+            <div>
+                <i class="fab  red fa-facebook"></i>
+                <i class="fab  red fa-twitter"></i>
+                <i class="fab  red fa-linkedin"></i>
+                <i class="fab  red fa-instagram"></i>
+                <i class="fab  red fa-tumblr"></i>
+            </div>
+        </div>
+    </footer>
 
     <!-- bootstrap js scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
