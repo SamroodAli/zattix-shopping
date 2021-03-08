@@ -40,6 +40,10 @@ main .jumbotron {
   background-color: #a44656;
 }
 
+main .carousel {
+  background-color: antiquewhite;
+}
+
 main .carousel-img {
   height: 20rem;
   width: 20rem;
