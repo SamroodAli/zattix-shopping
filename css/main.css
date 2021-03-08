@@ -49,4 +49,17 @@ main .carousel-img {
   height: 20rem;
   width: 20rem;
 }
+
+main .product-card {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+}
+
+main .product-card img {
+  width: 100%;
+}
 /*# sourceMappingURL=main.css.map */
