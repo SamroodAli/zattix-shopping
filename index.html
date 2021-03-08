@@ -21,8 +21,19 @@
     <nav class="navbar navbar-light navbar-expand-md d-md-flex align-items-md-center">
       <a class="navbar-brand" href="#"><i class="fa fa-shopping-basket"></i>Zattix</a>
       <!-- toggle button -->
-      <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle
+      <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span class="sr-only">Toggle
           navigation</span><span class="navbar-toggler-icon"></span></button>
+      <!-- collapsible nav bar- expand from md screen -->
+      <div class="collapse navbar-collapse" id="navcol">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-home"></i>&nbsp;HOME</a></li>
+          <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown"
+              href="#"><i class="fa fa-th"></i>&nbsp;Collections&nbsp;</a>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i>PURCHASE LIST</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
   <!-- bootstrap js scripts -->
