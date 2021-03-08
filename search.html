@@ -5,12 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Zattix</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Zattix Shopping</title>
+    <!-- bootstrap 4.6 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
+    <header>
+        <nav
+            class="navbar navbar-light navbar-expand-md d-md-flex align-items-md-center bg-charcoal position-fixed w-100 p-1 p-lg-2">
+            <a class="navbar-brand" href="#"><i class="fa fa-shopping-basket red mr-2"></i><span
+                    class="text-light mr-1 mr-lg-5">ZATTIX</span></a>
+            <!-- toggle button -->
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span class="sr-only">Toggle
+                    navigation</span><i class="fa fa-bars red"></i></button>
+            <!-- collapsible nav bar- expand from md screen -->
+            <div class="collapse navbar-collapse justify-content-between" id="navcol">
+                <!-- nav bar center items -->
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-home red"></i>&nbsp;<span
+                                class="red">HOME</span></a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
+                            data-toggle="dropdown" href="#"><i class="fa fa-th grey"></i>&nbsp;<span
+                                class="grey">Collections</span>&nbsp;</a>
+                        <!-- drop down items in collectons -->
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">First Item</a>
+                            <a class="dropdown-item" href="#">Second Item</a>
+                            <a class="dropdown-item" href="#">Third Item</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-cart grey pr-1"></i><span
+                                class="grey">PURCHASE LIST</span></a>
+                    </li>
 
+                </ul>
+                <button
+                    class="py-1 mt-3 px-5 px-md-2 px-lg-5 py-lg-2 m-0 ml-lg-4 my-sm-2 rounded border-0 bg-red text-light"
+                    type="button">POST
+                    AN
+                    AD</button>
+                <!-- navbar end items -->
+                <div class="d-flex flex-row align-items-center d-flex align-items-center px-0 px-md-2">
+                    <div class=" mt-4 mt-md-0 flex-nowrap">
+                        <a href="#">
+                            <picture class="mx-1"><img src="assets/samrood.jpg" alt="user image photo"></picture>
+                        </a>
+                        <a href="#">
+                            <span class="navbar-text text-light">Sam
+                            </span>
+                        </a>
+                        <a href="#"><i class="fa fa-envelope align-self-center text-light mx-2"></i></a>
+                        <!-- my picture as user -->
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- bootstrap js scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
