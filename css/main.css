@@ -49,6 +49,12 @@ main .jumbotron {
   border-radius: 0;
 }
 
+main .jumbotron .jumbotron-element {
+  margin: 0.25rem 0;
+  padding: 0.5rem 0;
+  height: 3rem;
+}
+
 main .carousel {
   background-color: antiquewhite;
 }

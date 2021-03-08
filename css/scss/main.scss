@@ -58,6 +58,12 @@ main {
     background-size: 70%;
     background-color: $red;
     border-radius: 0;
+
+    .jumbotron-element {
+      margin: 0.25rem 0;
+      padding: 0.5rem 0;
+      height: 3rem;
+    }
   }
 
   .carousel {
