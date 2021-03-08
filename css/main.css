@@ -22,6 +22,10 @@
   background-color: grey;
 }
 
+header .navbar .navbar-toggler {
+  border: 0.5px solid rgba(173, 119, 57, 0.356);
+}
+
 header .navbar img {
   width: 3rem;
   height: 3rem;
