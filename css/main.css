@@ -75,4 +75,25 @@ footer img {
   height: 4rem;
   width: 4rem;
 }
+
+.search-main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 7fr;
+      grid-template-columns: 3fr 7fr;
+}
+
+.search-main .search-queries {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+.search-main img {
+  height: 10rem;
+  width: 10rem;
+}
 /*# sourceMappingURL=main.css.map */

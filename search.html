@@ -2,237 +2,244 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Zattix Shopping</title>
-    <!-- bootstrap 4.6 -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <!-- font awesome icons -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Zattix Shopping</title>
+  <!-- bootstrap 4.6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
 <body>
-    <!-- header -->
-    <header class="container-fluid px-0">
-        <!-- navbar top -->
-        <nav
-            class="navbar navbar-light navbar-expand-md d-md-flex align-items-md-center bg-charcoal position-fixed w-100 p-1 p-lg-2">
-            <a class="navbar-brand" href="#"><i class="fa fa-shopping-basket red mr-2"></i><span
-                    class="text-light mr-1 mr-lg-5">ZATTIX</span></a>
-            <!-- toggle button -->
-            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span class="sr-only">Toggle
-                    navigation</span><i class="fa fa-bars red"></i></button>
-            <!-- collapsible nav bar- expand from md screen -->
-            <div class="collapse navbar-collapse justify-content-between" id="navcol">
-                <!-- nav bar center items -->
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-home red"></i>&nbsp;<span
-                                class="red">HOME</span></a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false"
-                            data-toggle="dropdown" href="#"><i class="fa fa-th grey"></i>&nbsp;<span
-                                class="grey">Collections</span>&nbsp;</a>
-                        <!-- drop down items in collectons -->
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">First Item</a>
-                            <a class="dropdown-item" href="#">Second Item</a>
-                            <a class="dropdown-item" href="#">Third Item</a>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-cart grey pr-1"></i><span
-                                class="grey">PURCHASE LIST</span></a>
-                    </li>
-
-                </ul>
-                <button
-                    class="py-1 mt-3 px-5 px-md-2 px-lg-5 py-lg-2 m-0 ml-lg-4 my-sm-2 rounded border-0 bg-red text-light"
-                    type="button">POST
-                    AN
-                    AD</button>
-                <!-- navbar end items -->
-                <div class="d-flex flex-row align-items-center d-flex align-items-center px-0 px-md-2">
-                    <div class=" mt-4 mt-md-0 flex-nowrap">
-                        <a href="#">
-                            <picture class="mx-1"><img src="assets/samrood.jpg" alt="user image photo"></picture>
-                        </a>
-                        <a href="#">
-                            <span class="navbar-text text-light">Sam
-                            </span>
-                        </a>
-                        <a href="#"><i class="fa fa-envelope align-self-center text-light mx-2"></i></a>
-                        <!-- my picture as user -->
-                    </div>
-                </div>
+  <!-- header -->
+  <header class="container-fluid px-0">
+    <!-- navbar top -->
+    <nav
+      class="navbar navbar-light navbar-expand-md d-md-flex align-items-md-center bg-charcoal position-fixed w-100 p-1 p-lg-2">
+      <a class="navbar-brand" href="#"><i class="fa fa-shopping-basket red mr-2"></i><span
+          class="text-light mr-1 mr-lg-5">ZATTIX</span></a>
+      <!-- toggle button -->
+      <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span class="sr-only">Toggle
+          navigation</span><i class="fa fa-bars red"></i></button>
+      <!-- collapsible nav bar- expand from md screen -->
+      <div class="collapse navbar-collapse justify-content-between" id="navcol">
+        <!-- nav bar center items -->
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-home red"></i>&nbsp;<span
+                class="red">HOME</span></a></li>
+          <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown"
+              href="#"><i class="fa fa-th grey"></i>&nbsp;<span class="grey">Collections</span>&nbsp;</a>
+            <!-- drop down items in collectons -->
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">First Item</a>
+              <a class="dropdown-item" href="#">Second Item</a>
+              <a class="dropdown-item" href="#">Third Item</a>
             </div>
-        </nav>
-        <!-- section for md to large screens -->
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-cart grey pr-1"></i><span
+                class="grey">PURCHASE LIST</span></a>
+          </li>
+
+        </ul>
+        <button class="py-1 mt-3 px-5 px-md-2 px-lg-5 py-lg-2 m-0 ml-lg-4 my-sm-2 rounded border-0 bg-red text-light"
+          type="button">POST
+          AN
+          AD</button>
+        <!-- navbar end items -->
+        <div class="d-flex flex-row align-items-center d-flex align-items-center px-0 px-md-2">
+          <div class=" mt-4 mt-md-0 flex-nowrap">
+            <a href="#">
+              <picture class="mx-1"><img src="assets/samrood.jpg" alt="user image photo"></picture>
+            </a>
+            <a href="#">
+              <span class="navbar-text text-light">Sam
+              </span>
+            </a>
+            <a href="#"><i class="fa fa-envelope align-self-center text-light mx-2"></i></a>
+            <!-- my picture as user -->
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- section for md to large screens -->
+    <div>
+    </div>
+  </header>
+  <main class="container-fluid">
+
+    <!-- top category info -->
+    <div class="row">
+      <div class="container-fluid p-0">
+        <div class="jumbotron mt-5 mb-0" style="text-align: center;">
+          <h1>ZATTIX</h1>
+          <p>Buying and Selling could not be simpler than this</p>
+          <div class="row row-cols-1 row-cols-md-4 justify-content-center">
+            <div class="dropdown d-inline"><button class="btn dropdown-toggle" aria-expanded="false"
+                data-toggle="dropdown" type="button">All Departments </button>
+              <!-- drop down -->
+              <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item"
+                  href="#">Second
+                  Item</a><a class="dropdown-item" href="#">Third Item</a>
+              </div>
+            </div>
+            <input type="search" placeholder="What are you searching for ?" />
+            <a href="search.html" class="btn btn-dark bg-charcoal text-light">Search</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- search page query -->
+    <div class="search-main">
+      <div>
+        <h3>Condition</h3>
+        <input type="checkbox" id="used" name="used" value="used">
+        <label for="used"> Used</label>
+        <input type="checkbox" id="new" name="new" value="new">
+        <label for="new"> New</label>
+      </div>
+      <div>
+        <h3>category</h3>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Dropdown button
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Piano</a>
+            <a class="dropdown-item" href="#">Violin</a>
+            <a class="dropdown-item" href="#">Drums</a>
+          </div>
+        </div>
+      </div>
+      <div class="search-queries">
+        <div class="d-flex">
+          <img src="./assets/piano-1.jpg" alt="">
+          <div>
+            <h4>Piano</h4>
+            <p>New</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit unde, similique modi
+              ad nihil ullam, minus corporis officia, harum necessitatibus molestiae
+              exercitationem obcaecati asperiores eos. Corporis magni omnis animi necessitatibus.
+            </p>
+            <p>From San fransisco</p>
+            <div>
+              <button>+</button>
+              <button>5500$</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="container-fluid">
+    <div class="row row-cols-1 row-cols-lg-4">
+      <div>
+        <img src="./assets/logo.svg" alt="">
+        <p class=d-inline>ZATTIX</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia asperiores nobis voluptatum
+          blanditiis
+          ipsa
+          ut
+          dolores soluta voluptates voluptate. Perferendis temporibus perspiciatis iste itaque
+          consequuntur,
+          fugiat
+          sed
+          vero nostrum at!</p>
+      </div>
+      <div>
+        <h5>Categoris</h5>
+        <div class="d-flex">
+          <div>
+            <ul>
+              <li>Piano</li>
+              <li>Piano</li>
+              <li>Piano</li>
+              <li>Piano</li>
+              <li>Piano</li>
+              <li>Piano</li>
+            </ul>
+          </div>
+          <div>
+            <ul>
+              <li>Piano</li>
+              <li>Piano</li>
+              <li>Piano</li>
+              <li>Piano</li>
+              <li>Piano</li>
+              <li>Piano</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div>
         <div>
+          <ul>
+            <li>Home</li>
+            <li>Cart</li>
+            <li>My Account</li>
+            <li>Orders</li>
+            <li>FAQ</li>
+            <li>Terms and Conditions</li>
+            <li>Contact Us</li>
+            <li>License</li>
+          </ul>
         </div>
-    </header>
-    <main class="container-fluid">
+      </div>
+      <div>
+        <form action="#" class="d-flex">
+          <div>
+            <label for="country">
+              COUNTRY
+            </label>
+            <label for="language">
+              LANGUAGE
+            </label>
+            <label for="currency">
+              CURRENCY
+            </label>
+          </div>
+          <div>
+            <input type="text" id="country" placeholder="India">
+            <input type="text" id="language" placeholder="English">
+            <input type="text" id="currency" placeholder="$ Dollar">
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="d-md-flex justify-content-between">
+      <div>
+        <ul class="d-md-flex flex-nowrap">
+          <li>Zattix.com</li>
+          <li>Created by Samrood Ali</li>
+          <li>Microver Project</li>
+          <li>Copyright</li>
+          <li>All Rights Reserved By Mohammed Awad</li>
+        </ul>
+      </div>
+      <div>
+        <i class="fab  red fa-facebook"></i>
+        <i class="fab  red fa-twitter"></i>
+        <i class="fab  red fa-linkedin"></i>
+        <i class="fab  red fa-instagram"></i>
+        <i class="fab  red fa-tumblr"></i>
+      </div>
+    </div>
+  </footer>
 
-        <!-- top category info -->
-        <div class="row">
-            <div class="container-fluid p-0">
-                <div class="jumbotron mt-5 mb-0" style="text-align: center;">
-                    <h1>ZATTIX</h1>
-                    <p>Buying and Selling could not be simpler than this</p>
-                    <div class="row row-cols-1 row-cols-md-4 justify-content-center">
-                        <div class="dropdown d-inline"><button class="btn dropdown-toggle" aria-expanded="false"
-                                data-toggle="dropdown" type="button">All Departments </button>
-                            <!-- drop down -->
-                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a
-                                    class="dropdown-item" href="#">Second
-                                    Item</a><a class="dropdown-item" href="#">Third Item</a>
-                            </div>
-                        </div>
-                        <input type="search" placeholder="What are you searching for ?" />
-                        <a href="search.html" class="btn btn-dark bg-charcoal text-light">Search</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- search page query -->
-        <div class="search-main">
-            <div>
-                <div>
-                    <h3>Condition</h3>
-                    <input type="checkbox" id="used" name="used" value="used">
-                    <label for="used"> Used</label>
-                    <input type="checkbox" id="new" name="new" value="new">
-                    <label for="new"> New</label>
-                </div>
-                <div>
-                    <div>
-                        <h3>category</h3>
-                        <div class="dropdown">
-                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown button
-                            </button>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <a class="dropdown-item" href="#">Piano</a>
-                                <a class="dropdown-item" href="#">Violin</a>
-                                <a class="dropdown-item" href="#">Drums</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div>
-
-                    </div>
-                </div>
-
-
-
-
-    </main>
-    <!-- footer -->
-    <footer class="container-fluid">
-        <div class="row row-cols-1 row-cols-lg-4">
-            <div>
-                <img src="./assets/logo.svg" alt="">
-                <p class=d-inline>ZATTIX</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia asperiores nobis voluptatum
-                    blanditiis
-                    ipsa
-                    ut
-                    dolores soluta voluptates voluptate. Perferendis temporibus perspiciatis iste itaque
-                    consequuntur,
-                    fugiat
-                    sed
-                    vero nostrum at!</p>
-            </div>
-            <div>
-                <h5>Categoris</h5>
-                <div class="d-flex">
-                    <div>
-                        <ul>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <ul>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                            <li>Piano</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <div>
-                    <ul>
-                        <li>Home</li>
-                        <li>Cart</li>
-                        <li>My Account</li>
-                        <li>Orders</li>
-                        <li>FAQ</li>
-                        <li>Terms and Conditions</li>
-                        <li>Contact Us</li>
-                        <li>License</li>
-                    </ul>
-                </div>
-            </div>
-            <div>
-                <form action="#" class="d-flex">
-                    <div>
-                        <label for="country">
-                            COUNTRY
-                        </label>
-                        <label for="language">
-                            LANGUAGE
-                        </label>
-                        <label for="currency">
-                            CURRENCY
-                        </label>
-                    </div>
-                    <div>
-                        <input type="text" id="country" placeholder="India">
-                        <input type="text" id="language" placeholder="English">
-                        <input type="text" id="currency" placeholder="$ Dollar">
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="d-md-flex justify-content-between">
-            <div>
-                <ul class="d-md-flex flex-nowrap">
-                    <li>Zattix.com</li>
-                    <li>Created by Samrood Ali</li>
-                    <li>Microver Project</li>
-                    <li>Copyright</li>
-                    <li>All Rights Reserved By Mohammed Awad</li>
-                </ul>
-            </div>
-            <div>
-                <i class="fab  red fa-facebook"></i>
-                <i class="fab  red fa-twitter"></i>
-                <i class="fab  red fa-linkedin"></i>
-                <i class="fab  red fa-instagram"></i>
-                <i class="fab  red fa-tumblr"></i>
-            </div>
-        </div>
-    </footer>
-
-    <!-- bootstrap js scripts -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-        crossorigin="anonymous"></script>
+  <!-- bootstrap js scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

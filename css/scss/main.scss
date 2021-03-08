@@ -91,4 +91,14 @@ footer {
 .search-main {
   display: grid;
   grid-template-columns: 3fr 7fr;
+
+  .search-queries {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  img {
+    height: 10rem;
+    width: 10rem;
+  }
 }
