@@ -38,6 +38,7 @@ main .jumbotron {
   background-position: 5rem;
   background-size: 70%;
   background-color: #a44656;
+  border-radius: 0;
 }
 
 main .carousel {
