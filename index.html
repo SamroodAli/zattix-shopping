@@ -72,8 +72,8 @@
   <main class="container-fluid">
     <section class="row">
       <!-- top category info -->
-      <div class="container-fluid mt-4 p-0">
-        <div class="jumbotron" style="text-align: center;">
+      <div class="container-fluid p-0">
+        <div class="jumbotron mt-5" style="text-align: center;">
           <h1>ZATTIX</h1>
           <p>Buying and Selling could not be simpler than this</p>
           <div class="row row-cols-1 row-cols-md-4 justify-content-center">
@@ -91,10 +91,28 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row row-cols-2">
-
+      <!-- carousel -->
+      <div data-ride="carousel" class="carousel slide carousel-fade" id="carousel-1">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <!-- slide 1 -->
+          </div>
+          <div class="carousel-item">
+            <!-- slide 2 -->
+          </div>
+          <div class="carousel-item">
+            <!-- slide 3 -->
+          </div>
         </div>
+        <div><a href="#carousel-1" role="button" data-slide="prev" class="carousel-control-prev"><span
+              aria-hidden="true" class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a
+            href="#carousel-1" role="button" data-slide="next" class="carousel-control-next"><span aria-hidden="true"
+              class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-1" data-slide-to="1"></li>
+          <li data-target="#carousel-1" data-slide-to="2"></li>
+        </ol>
       </div>
     </section>
 
