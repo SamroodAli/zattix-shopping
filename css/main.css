@@ -31,4 +31,9 @@ header .navbar img {
   height: 3rem;
   border-radius: 50%;
 }
+
+main .carousel-img {
+  height: 20rem;
+  width: 20rem;
+}
 /*# sourceMappingURL=main.css.map */
