@@ -112,6 +112,10 @@ main .carousel-main .carousel-indicators li:active {
   color: red;
 }
 
+main .product-section {
+  padding: 3rem 10rem;
+}
+
 main .product-card {
   display: -ms-grid;
   display: grid;
