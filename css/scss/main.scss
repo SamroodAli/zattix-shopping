@@ -108,6 +108,12 @@ main {
           min-height: 20rem;
           max-height: 25rem;
         }
+
+        .carousel-texts {
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+        }
       }
     }
 
