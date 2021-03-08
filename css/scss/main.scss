@@ -1,21 +1,29 @@
-$grey: #353535;
-$red: #A44656;
+$charcoal: #353535;
+$red: #a44656;
 
 //general theme styles
 .red {
   color: $red;
 }
 
+.charcoal {
+  color: $charcoal;
+}
+
 .grey {
-  color: $grey;
+  color: grey;
 }
 
 .bg-red {
   background-color: $red;
 }
 
+.bg-charcoal {
+  background-color: $charcoal;
+}
+
 .bg-grey {
-  background-color: $grey;
+  background-color: grey;
 }
 
 // header styles

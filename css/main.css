@@ -1,17 +1,25 @@
 .red {
-  color: #A44656;
+  color: #a44656;
 }
 
-.grey {
+.charcoal {
   color: #353535;
 }
 
+.grey {
+  color: grey;
+}
+
 .bg-red {
-  background-color: #A44656;
+  background-color: #a44656;
+}
+
+.bg-charcoal {
+  background-color: #353535;
 }
 
 .bg-grey {
-  background-color: #353535;
+  background-color: grey;
 }
 
 header .navbar img {

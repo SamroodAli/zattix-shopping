@@ -18,8 +18,9 @@
 <body>
   <header>
     <!-- navbar top -->
-    <nav class="navbar navbar-light navbar-expand-md d-md-flex align-items-md-center">
-      <a class="navbar-brand" href="#"><i class="fa fa-shopping-basket"></i>Zattix</a>
+    <nav class="navbar navbar-light navbar-expand-md d-md-flex align-items-md-center bg-charcoal">
+      <a class="navbar-brand" href="#"><i class="fa fa-shopping-basket red"></i><span
+          class="text-light">Zattix</span></a>
       <!-- toggle button -->
       <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span class="sr-only">Toggle
           navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -27,9 +28,10 @@
       <div class="collapse navbar-collapse justify-content-between" id="navcol">
         <!-- nav bar center items -->
         <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-home"></i>&nbsp;HOME</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-home red"></i>&nbsp;<span
+                class="red">HOME</span></a></li>
           <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-toggle="dropdown"
-              href="#"><i class="fa fa-th"></i>&nbsp;Collections&nbsp;</a>
+              href="#"><i class="fa fa-th grey"></i>&nbsp;<span class="grey">Collections</span>&nbsp;</a>
             <!-- drop down items in collectons -->
             <div class="dropdown-menu">
               <a class="dropdown-item" href="#">First Item</a>
@@ -37,17 +39,23 @@
               <a class="dropdown-item" href="#">Third Item</a>
             </div>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-cart"></i>PURCHASE LIST</a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-shopping-cart grey pr-1"></i><span
+                class="grey">PURCHASE LIST</span></a>
+          </li>
+
         </ul>
+        <button class="py-1 mt-3 px-5 px-md-2 px-lg-5 ml-lg-4 my-sm-2 rounded border-0 bg-red text-light"
+          type="button">POST
+          AN
+          AD</button>
         <!-- navbar end items -->
-        <div class="d-flex flex-row align-items-center justify-content-between">
-          <button class="btn btn-primary mr-auto mr-md-5" type="button">POST AN AD</button>
-          <div>
-            <span class="navbar-text">Samrood
+        <div class="d-flex flex-row align-items-center flex-nowrap d-flex align-items-center ">
+          <div class="ml-auto mt-4 mt-md-0">
+            <i class="fa fa-envelope align-self-center text-light mx-1"></i>
+            <span class="navbar-text text-light mx-1">Samrood
             </span>
-            <i class="fa fa-envelope align-self-center"></i>
             <!-- my picture as user -->
-            <picture style="border-radius: 50%;"><img src="assets/samrood.jpg"></picture>
+            <picture class="mx-1"><img src="assets/samrood.jpg" alt="user image photo"></picture>
           </div>
         </div>
       </div>
