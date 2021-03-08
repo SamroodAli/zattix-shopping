@@ -32,6 +32,14 @@ header .navbar img {
   border-radius: 50%;
 }
 
+main .jumbotron {
+  background: url("../assets/logo.svg");
+  background-repeat: no-repeat;
+  background-position: 5rem;
+  background-size: 70%;
+  background-color: #a44656;
+}
+
 main .carousel-img {
   height: 20rem;
   width: 20rem;

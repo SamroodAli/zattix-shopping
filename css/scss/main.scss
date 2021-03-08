@@ -42,6 +42,14 @@ header {
 }
 
 main {
+  .jumbotron {
+    background: url("../assets/logo.svg");
+    background-repeat: no-repeat;
+    background-position: 5rem;
+    background-size: 70%;
+    background-color: $red;
+  }
+
   .carousel-img {
     height: 20rem;
     width: 20rem;
