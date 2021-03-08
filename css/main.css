@@ -50,6 +50,10 @@ li {
   border-radius: 0;
 }
 
+.container-fluid {
+  padding: 0;
+}
+
 header .navbar .navbar-toggler {
   border: 0.5px solid rgba(173, 119, 57, 0.356);
 }
