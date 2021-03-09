@@ -90,11 +90,12 @@ main .carousel-main.carousel {
 main .carousel-main.carousel .carousel-item .carousel-img {
   max-width: 100%;
   min-width: 100%;
-  min-height: 20rem;
-  max-height: 25rem;
+  min-height: 15rem;
+  max-height: 20rem;
 }
 
 main .carousel-main.carousel .carousel-item .carousel-texts {
+  margin-top: -12rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -105,6 +106,50 @@ main .carousel-main.carousel .carousel-item .carousel-texts {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0 -4px 10px rgba(255, 255, 255, 0.3);
+}
+
+main .carousel-main.carousel .carousel-item .carousel-texts h2 {
+  color: #ff002b;
+}
+
+main .carousel-main.carousel .carousel-item .carousel-texts .quote {
+  margin-top: 2rem;
+}
+
+main .carousel-main.carousel .carousel-item .carousel-texts .quote,
+main .carousel-main.carousel .carousel-item .carousel-texts p {
+  color: white;
+}
+
+main .carousel-main.carousel .carousel-item .carousel-texts .check {
+  margin-top: 2rem;
+  color: black;
+}
+
+@media (min-width: 540px) {
+  main .carousel-main.carousel .carousel-item .carousel-texts {
+    margin-top: -9rem;
+  }
+  main .carousel-main.carousel .carousel-item .carousel-texts span {
+    color: white;
+  }
+}
+
+@media (min-width: 768px) {
+  main .carousel-main.carousel .carousel-item .carousel-texts {
+    margin-top: 0;
+  }
+  main .carousel-main.carousel .carousel-item .carousel-texts .quote,
+  main .carousel-main.carousel .carousel-item .carousel-texts p,
+  main .carousel-main.carousel .carousel-item .carousel-texts .check,
+  main .carousel-main.carousel .carousel-item .carousel-texts span {
+    color: black;
+    margin-top: 0;
+  }
+  main .carousel-main.carousel .carousel-item .carousel-texts h2 {
+    color: #A44656;
+  }
 }
 
 main .carousel-main .carousel-indicators {
