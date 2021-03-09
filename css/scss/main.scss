@@ -208,7 +208,6 @@ footer {
   }
 
   .footer-nav-ul {
-
     li:nth-child(odd) {
       grid-column: 2/6;
     }
@@ -218,13 +217,23 @@ footer {
     }
   }
 
-  //offsets in options in the footer
-  .option-2 {
-    padding-right: 19px;
-  }
+  .footer-options {
+    max-width: 75%;
+    margin: auto;
 
-  .option-3 {
-    padding-right: 23px;
+    * {
+      background-color: grey;
+      color: white;
+    }
+
+    //offsets in options in the footer
+    .option-2 {
+      padding-right: 19px;
+    }
+
+    .option-3 {
+      padding-right: 23px;
+    }
   }
 
   .footer-bottom-nav {

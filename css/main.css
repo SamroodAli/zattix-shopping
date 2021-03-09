@@ -199,11 +199,21 @@ footer .footer-nav-ul li:nth-child(even) {
   grid-column: 6/10;
 }
 
-footer .option-2 {
+footer .footer-options {
+  max-width: 75%;
+  margin: auto;
+}
+
+footer .footer-options * {
+  background-color: grey;
+  color: white;
+}
+
+footer .footer-options .option-2 {
   padding-right: 19px;
 }
 
-footer .option-3 {
+footer .footer-options .option-3 {
   padding-right: 23px;
 }
 
