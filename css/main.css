@@ -79,11 +79,6 @@ li {
       grid-template-columns: repeat(8, 1fr);
 }
 
-.bg-body {
-  background-image: -webkit-gradient(linear, left top, right top, from(#868f96), to(#596164));
-  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
-}
-
 header .navbar .navbar-toggler {
   border: 0.5px solid rgba(173, 119, 57, 0.356);
 }
@@ -182,6 +177,10 @@ main .pagination .page-link {
   color: #a44656;
 }
 
+footer {
+  background-color: grey;
+}
+
 footer img {
   height: 4rem;
   width: 4rem;
@@ -228,12 +227,6 @@ footer .footer-bottom-nav {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   width: 100%;
-}
-
-@media (min-width: 768px) {
-  footer .product-section {
-    padding: 3rem 10rem;
-  }
 }
 
 .search-main {

@@ -86,7 +86,7 @@ li {
 }
 
 .bg-body {
-  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  // body bgc
 }
 
 // header styles
@@ -201,6 +201,8 @@ main {
 }
 
 footer {
+  background-color: grey;
+
   img {
     height: 4rem;
     width: 4rem;
@@ -245,12 +247,6 @@ footer {
     width: 100%;
   }
 
-  @media (min-width: 768px) {
-    .product-section {
-      padding: 3rem 10rem;
-    }
-
-  }
 }
 
 // search page styles
