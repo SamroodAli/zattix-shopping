@@ -126,13 +126,19 @@ main .carousel-main.carousel .carousel-item .carousel-img {
   height: 15rem;
 }
 
+main .carousel-main.carousel .carousel-item h2 {
+  color: white;
+}
+
 main .carousel-main.carousel .carousel-item .carousel-texts p {
   color: white;
 }
 
 main .carousel-main .carousel-indicators {
   position: relative;
-  top: 1.1rem;
+  background-color: #ccc;
+  width: 100%;
+  margin: 0;
 }
 
 main .carousel-main .carousel-indicators li:active {

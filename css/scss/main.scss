@@ -146,6 +146,10 @@ main {
           height: 15rem;
         }
 
+        h2 {
+          color: white;
+        }
+
         .carousel-texts {
           p {
             color: white;
@@ -156,7 +160,9 @@ main {
 
     .carousel-indicators {
       position: relative;
-      top: 1.1rem;
+      background-color: #ccc;
+      width: 100%;
+      margin: 0;
 
       li:active {
         color: red;
