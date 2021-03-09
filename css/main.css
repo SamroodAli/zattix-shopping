@@ -225,11 +225,13 @@ main .product-section .product-grid {
   main .product-section .product-grid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
   }
 }
 
 @media (min-width: 992px) {
   main .product-section .product-grid {
+    grid-gap: 3rem;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
   }
