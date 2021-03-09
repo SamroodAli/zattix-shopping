@@ -3,6 +3,12 @@ $red: #a44656;
 
 //general theme styles
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
 li {
   list-style: none;
 }
@@ -64,8 +70,8 @@ li {
   padding: 0;
 }
 
-.bg-dark-blue {
-  background-color: antiquewhite;
+.bg-body {
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
 }
 
 // header styles
@@ -128,66 +134,21 @@ main {
   // carousel styling
   .carousel-main {
     &.carousel {
-      background-color: #e3e3e3;
+      background-color: #f6f6f6;
 
       // caoursal slides
       .carousel-item {
+        background-color: #485461;
+        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+
         .carousel-img {
-          max-width: 100%;
           min-width: 100%;
-          min-height: 15rem;
-          max-height: 20rem;
+          height: 15rem;
         }
 
         .carousel-texts {
-          margin-top: -12rem;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3), 0 -4px 10px rgba(255, 255, 255, 0.3);
-
-          h2 {
-            color: #ff002b;
-          }
-
-          .quote {
-            margin-top: 2rem;
-          }
-
-
-          .quote,
           p {
             color: white;
-          }
-
-          .check {
-            margin-top: 2rem;
-            color: black;
-          }
-
-
-          @media (min-width:540px) {
-            margin-top: -9rem;
-
-            span {
-              color: white;
-            }
-          }
-
-          @media (min-width: 768px) {
-            margin-top: 0;
-
-            .quote,
-            p,
-            .check,
-            span {
-              color: black;
-              margin-top: 0;
-            }
-
-            h2 {
-              color: #A44656;
-            }
           }
         }
       }
