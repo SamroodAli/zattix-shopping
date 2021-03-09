@@ -199,6 +199,14 @@ footer .footer-nav-ul li:nth-child(even) {
   grid-column: 6/10;
 }
 
+footer .option-2 {
+  padding-right: 19px;
+}
+
+footer .option-3 {
+  padding-right: 23px;
+}
+
 @media (min-width: 768px) {
   footer .product-section {
     padding: 3rem 10rem;

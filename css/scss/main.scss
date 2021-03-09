@@ -218,6 +218,15 @@ footer {
     }
   }
 
+  //offsets in options in the footer
+  .option-2 {
+    padding-right: 19px;
+  }
+
+  .option-3 {
+    padding-right: 23px;
+  }
+
   @media (min-width: 768px) {
     .product-section {
       padding: 3rem 10rem;
