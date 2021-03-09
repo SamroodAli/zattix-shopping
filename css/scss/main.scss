@@ -193,6 +193,12 @@ main {
       width: 100%;
     }
   }
+
+  .pagination {
+    .page-link {
+      color: $red;
+    }
+  }
 }
 
 footer {
@@ -218,7 +224,6 @@ footer {
     }
   }
 }
-
 
 // search page styles
 .search-main {

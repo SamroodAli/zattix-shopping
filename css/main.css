@@ -178,6 +178,10 @@ main .product-card img {
   width: 100%;
 }
 
+main .pagination .page-link {
+  color: #a44656;
+}
+
 footer img {
   height: 4rem;
   width: 4rem;
