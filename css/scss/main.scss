@@ -152,8 +152,7 @@ main {
 
       // caoursal slides
       .carousel-item {
-        background-color: #485461;
-        background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+        background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
 
         .carousel-img {
           min-width: 100%;
@@ -218,7 +217,12 @@ footer {
   }
 
   .footer-options {
-    max-width: 75%;
+    max-width: 25%;
+
+    @media (max-width: 768px) {
+      max-width: 75%;
+    }
+
     margin: auto;
 
     * {
@@ -245,6 +249,7 @@ footer {
     .product-section {
       padding: 3rem 10rem;
     }
+
   }
 }
 

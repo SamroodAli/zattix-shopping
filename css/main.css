@@ -137,8 +137,8 @@ main .carousel-main.carousel {
 }
 
 main .carousel-main.carousel .carousel-item {
-  background-color: #485461;
-  background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#868f96), to(#596164));
+  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
 }
 
 main .carousel-main.carousel .carousel-item .carousel-img {
@@ -200,8 +200,14 @@ footer .footer-nav-ul li:nth-child(even) {
 }
 
 footer .footer-options {
-  max-width: 75%;
+  max-width: 25%;
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  footer .footer-options {
+    max-width: 75%;
+  }
 }
 
 footer .footer-options * {
