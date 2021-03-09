@@ -190,7 +190,7 @@ main .product-section .product-card .product-img-container .product-img {
 }
 
 main .product-section .product-card .product-card-bottom {
-  padding: 1rem;
+  padding: 0.5rem 0;
 }
 
 main .product-section .product-card .product-card-bottom .add-svg-container {
