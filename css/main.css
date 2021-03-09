@@ -160,17 +160,11 @@ main .carousel-main .carousel-indicators li:active {
   color: red;
 }
 
-main .product-card {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 1rem;
-}
-
-main .product-card img {
-  width: 100%;
+main .product-section .product-card .product-img-container .product-img {
+  width: 15rem;
+  height: 15rem;
+  padding: 2rem;
+  margin: auto;
 }
 
 main .pagination .page-link {
