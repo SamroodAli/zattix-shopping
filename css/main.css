@@ -207,6 +207,13 @@ footer .option-3 {
   padding-right: 23px;
 }
 
+footer .footer-bottom-nav {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   footer .product-section {
     padding: 3rem 10rem;
