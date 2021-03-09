@@ -59,6 +59,26 @@ li {
   padding: 0;
 }
 
+.d-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+.g-c-2 {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.g-c-4 {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.g-c-8 {
+  -ms-grid-columns: (1fr)[8];
+      grid-template-columns: repeat(8, 1fr);
+}
+
 .bg-body {
   background-image: -webkit-gradient(linear, left top, right top, from(#868f96), to(#596164));
   background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
@@ -163,6 +183,24 @@ footer img {
   width: 4rem;
 }
 
+footer .footer-nav-ul li:nth-child(odd) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+}
+
+footer .footer-nav-ul li:nth-child(even) {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6/10;
+}
+
+@media (min-width: 768px) {
+  footer .product-section {
+    padding: 3rem 10rem;
+  }
+}
+
 .search-main {
   display: -ms-grid;
   display: grid;
@@ -182,11 +220,5 @@ footer img {
 .search-main img {
   height: 10rem;
   width: 10rem;
-}
-
-@media (min-width: 768px) {
-  .product-section {
-    padding: 3rem 10rem;
-  }
 }
 /*# sourceMappingURL=main.css.map */
