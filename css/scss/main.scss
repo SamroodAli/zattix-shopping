@@ -8,7 +8,6 @@ $red: #a44656;
   padding: 0;
 }
 
-
 li {
   list-style: none;
 }
@@ -82,8 +81,7 @@ header {
     }
 
     .navbar-collapse {
-
-      @media(max-width: 768px) {
+      @media (max-width: 768px) {
         padding: 1rem 2rem;
 
         button {
@@ -179,6 +177,8 @@ main {
       width: 100%;
     }
   }
+
+
 }
 
 footer {
