@@ -203,7 +203,6 @@ main {
     }
   }
 
-
   // product grid and card styling
   .product-section {
     .product-card {
@@ -242,6 +241,27 @@ main {
         }
       }
     }
+
+    // product grid
+    .product-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 1rem;
+
+      @media (min-width: 374px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @media (min-width: 992px) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+
   }
 
   .pagination {

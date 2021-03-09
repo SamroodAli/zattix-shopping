@@ -206,6 +206,35 @@ main .product-section .product-card .product-card-bottom .add-svg-container:hove
   fill: black;
 }
 
+main .product-section .product-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  grid-gap: 1rem;
+}
+
+@media (min-width: 374px) {
+  main .product-section .product-grid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  main .product-section .product-grid {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  main .product-section .product-grid {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 main .pagination .page-link {
   color: #a44656;
 }
