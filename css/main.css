@@ -201,11 +201,6 @@ main .product-section .product-card .product-card-bottom .add-svg-container .add
   fill: #a44656;
 }
 
-main .product-section .product-card .product-card-bottom .add-svg-container:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
 main .product-section .product-card .product-card-bottom .add-svg-container:hover .add-svg-path {
   fill: black;
 }

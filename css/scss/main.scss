@@ -229,15 +229,11 @@ main {
           }
 
           &:hover {
-            transform: scale(1.1);
-
             .add-svg-path {
               fill: black;
             }
-
           }
         }
-
       }
     }
   }
