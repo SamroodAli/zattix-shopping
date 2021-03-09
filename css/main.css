@@ -51,6 +51,22 @@ li {
   min-width: 100%;
 }
 
+.top {
+  top: 0;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
 .br-0 {
   border-radius: 0;
 }
