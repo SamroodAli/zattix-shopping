@@ -68,12 +68,30 @@ li {
   background-color: antiquewhite;
 }
 
-
 // header styles
 header {
   .navbar {
     .navbar-toggler {
       border: 0.5px solid rgba(173, 119, 57, 0.356);
+    }
+
+    .navbar-collapse {
+
+      @media(max-width: 768px) {
+        padding: 1rem 2rem;
+
+        button {
+          width: 100%;
+        }
+
+        .user {
+          justify-content: space-around;
+
+          picture {
+            height: 3rem;
+          }
+        }
+      }
     }
 
     img {
