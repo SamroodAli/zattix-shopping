@@ -207,20 +207,26 @@ main {
   // product grid and card styling
   .product-section {
     .product-card {
-      padding: 1rem;
-
       .product-img-container {
         .product-img {
-          height: 15rem;
+          height: 10rem;
           width: 100%;
         }
       }
 
       .product-card-bottom {
-        padding: 0.5rem 0;
+        .button {
+          padding: 0;
+          margin: 0;
+        }
+
+
+        .price {
+          padding: 0.9rem 1rem;
+        }
 
         .add-svg-container {
-          display: inline;
+          margin-top: -0.8rem;
 
           .add-svg {
             .add-svg-path {

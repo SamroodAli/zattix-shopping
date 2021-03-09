@@ -180,21 +180,22 @@ main .carousel-main .carousel-indicators li:active {
   color: red;
 }
 
-main .product-section .product-card {
-  padding: 1rem;
-}
-
 main .product-section .product-card .product-img-container .product-img {
-  height: 15rem;
+  height: 10rem;
   width: 100%;
 }
 
-main .product-section .product-card .product-card-bottom {
-  padding: 0.5rem 0;
+main .product-section .product-card .product-card-bottom .button, main .product-section .product-card .product-card-bottom .button-w-100 {
+  padding: 0;
+  margin: 0;
+}
+
+main .product-section .product-card .product-card-bottom .price {
+  padding: 0.9rem 1rem;
 }
 
 main .product-section .product-card .product-card-bottom .add-svg-container {
-  display: inline;
+  margin-top: -0.8rem;
 }
 
 main .product-section .product-card .product-card-bottom .add-svg-container .add-svg .add-svg-path {
