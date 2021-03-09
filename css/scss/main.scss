@@ -187,13 +187,37 @@ main {
   // product grid and card styling
   .product-section {
     .product-card {
+      padding: 1rem;
+
       .product-img-container {
         .product-img {
-          width: 15rem;
           height: 15rem;
-          padding: 2rem;
-          margin: auto;
+          width: 100%;
         }
+      }
+
+      .product-card-bottom {
+        padding: 1rem;
+
+        .add-svg-container {
+          display: inline;
+
+          .add-svg {
+            .add-svg-path {
+              fill: $red;
+            }
+          }
+
+          &:hover {
+            transform: scale(1.1);
+
+            .add-svg-path {
+              fill: black;
+            }
+
+          }
+        }
+
       }
     }
   }
