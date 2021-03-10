@@ -339,21 +339,35 @@ footer {
         width: 100%;
       }
     }
-  }
 
+    .query-text-container {
+      display: flex;
+    }
+  }
 
   @media (min-width: 768px) {
     grid-template-columns: 3fr 7fr;
 
-    .search-queries {
-      grid-column: 2/3;
-      grid-row: 1/2;
-    }
+    .query-item {
+      display: flex;
 
+      .query-img-container {
+        flex: 0 0 40%;
+
+        .query-img {
+          width: 100%;
+        }
+      }
+
+      .query-text-container {
+        flex: 0 0 60%;
+      }
+    }
   }
 
   img {
-    height: 10rem;
     width: 10rem;
+    height: 100%;
+    max-height: 20rem;
   }
 }
