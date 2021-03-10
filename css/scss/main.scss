@@ -360,7 +360,7 @@ footer {
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: 3fr 7fr;
+    grid-template-columns: 3fr 6fr;
     grid-template-rows: minmax(min-content, max-content);
 
     .query-item {
@@ -368,12 +368,26 @@ footer {
       grid-template-columns: 1fr 1fr;
 
       .query-img-container {
-        flex: 0 0 25%;
+        flex: 0 0 40%;
 
         .query-img {
           height: 13rem;
           max-height: 100%;
         }
+      }
+
+      .query-text-container {
+        flex: 0 0 60%;
+      }
+    }
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: 3fr 7fr;
+
+    .query-item {
+      .query-img-container {
+        flex: 0 0 25%;
       }
 
       .query-text-container {
