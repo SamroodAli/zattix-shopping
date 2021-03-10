@@ -379,13 +379,13 @@ footer .footer-bottom-nav {
 @media (min-width: 992px) {
   .search-main .query-item .query-img-container {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 25%;
-            flex: 0 0 25%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
   }
   .search-main .query-item .query-text-container {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 75%;
-            flex: 0 0 75%;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
   }
 }
 

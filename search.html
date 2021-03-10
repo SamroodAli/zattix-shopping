@@ -77,42 +77,62 @@
       </div>
     </div>
 
+    <button class="w-100 button my-1 d-md-none" data-toggle="collapse" data-target="#filter-collapse"
+      aria-expanded="false" aria-controls="filter-collapse">Search
+      Filters
+    </button>
     <!-- main products section -->
     <!-- search page query -->
-    <div class="search-main container-lg">
+    <div class="search-main container-fluid container-lg">
       <!-- left column -->
       <div>
-        <button class="w-100 button my-1 d-md-none" data-toggle="collapse" data-target="#filter-collapse"
-          aria-expanded="false" aria-controls="filter-collapse">Search
-          Filters</button>
-        <div id="filter-collapse" class="collapse d-md-none">
+
+        <div id="filter-collapse" class="collapse">
           <div>
             <h6 class="text-center font-weight-bold red m-1">CATEGORIES</h6>
-            <ul class="d-flex justify-content-around">
-              <li class="btn btn-outline-danger text-dark">Piano</li>
-              <li class="btn btn-outline-danger text-dark">Violin</li>
-              <li class="btn btn-outline-danger text-dark">Guitar</li>
-            </ul>
+            <div class="checkbox">
+              <input id="m-check4" type="checkbox" value="New" name="condition">
+              <label class="mx-2" for="m-check4">Piano</label>
+            </div>
+            <div class="checkbox">
+              <input id="m-check5" type="checkbox" value="used" name="condition">
+              <label class=" mx-2" for="m-check5">Violin</label>
+            </div>
+            <div>
+              <input id="m-check6" type="checkbox" value="used" name="condition">
+              <label class=" mx-2" for="m-check6">Drums</label>
+            </div>
+
           </div>
           <div>
             <h6 class="text-center font-weight-bold red m-1">COMPANY</h6>
-            <ul class="d-flex justify-content-around">
-              <li class="btn btn-outline-danger text-dark">Zattix</li>
-              <li class="btn btn-outline-danger text-dark">Cassion</li>
-              <li class="btn btn-outline-danger text-dark">Picasot</li>
-            </ul>
+            <div class="checkbox">
+              <input id="m-check1" type="checkbox" value="New" name="condition">
+              <label class="" for="m-check1">Zattix</label>
+            </div>
+            <div class="checkbox">
+              <input id="m-check2" type="checkbox" value="used" name="condition">
+              <label class="" for="m-check2">Cassion</label>
+            </div>
+            <div>
+              <input id="m-check3" type="checkbox" value="used" name="condition">
+              <label class="" for="m-check3">Picasot</label>
+            </div>
           </div>
           <div>
             <h6 class="text-center font-weight-bold red m-1">CONDITION</h6>
-            <ul class="d-flex justify-content-around">
-              <li class="btn btn-outline-danger text-dark">New</li>
-              <li class="btn btn-outline-danger text-dark">Refurbished</li>
-              <li class="btn btn-outline-danger text-dark">Used</li>
-            </ul>
+            <div class="checkbox">
+              <input id="m-new" type="radio" value="New" name="condition">
+              <label class="" for="m-new">New</label>
+            </div>
+            <div class="checkbox">
+              <input id="m-used" type="radio" value="used" name="condition">
+              <label class="" for="m-used">Used</label>
+            </div>
           </div>
         </div>
         <!-- filter conditions for tablet and desktop -->
-        <div class="p-4 border m-3">
+        <div class="p-4 border m-3 d-none d-md-block">
           <div class="filter-grid ">
             <h5 class="red filter-heading">Condition</h4>
               <div class="checkbox">
