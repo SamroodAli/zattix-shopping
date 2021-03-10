@@ -16,6 +16,14 @@ li {
   list-style: none;
 }
 
+body {
+  font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-family: "Gotham Rounded", Arial, Helvetica, sans-serif;
+}
+
 .red {
   color: #a44656;
 }

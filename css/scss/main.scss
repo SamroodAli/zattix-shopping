@@ -21,6 +21,15 @@ li {
   list-style: none;
 }
 
+//font scheme
+body {
+  font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-family: "Gotham Rounded", Arial, Helvetica, sans-serif;
+}
+
 //color scheme for easy swap
 .red {
   color: $red;
