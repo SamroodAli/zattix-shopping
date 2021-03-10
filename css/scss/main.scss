@@ -333,12 +333,10 @@ footer {
   grid-template-columns: 1fr;
 
   .query-item {
-    padding: 0 1rem;
-    display: grid;
-
     .query-img-container {
       .query-img {
         width: 100%;
+        height: 10rem;
       }
     }
 
@@ -354,21 +352,15 @@ footer {
     grid-template-rows: minmax(min-content, max-content);
 
     .query-item {
+      display: flex;
       grid-template-columns: 1fr 1fr;
 
       .query-img-container {
+        flex: 0 0 30%;
 
-        .query-img-container {
-          display: flex;
-
-          .query-img {
-            max-height: 100%;
-          }
+        .query-img {
+          max-height: 100%;
         }
-      }
-
-      .query-text-container {
-        padding: 1rem;
       }
     }
   }
