@@ -52,6 +52,11 @@ li {
   background-color: inherit;
 }
 
+.bg-product {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
 .button, .button-w-100 {
   background-color: #a44656;
   color: white;
@@ -236,7 +241,7 @@ main .product-section .product-grid {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 
 @media (min-width: 374px) {

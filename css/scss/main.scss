@@ -58,6 +58,11 @@ li {
   background-color: inherit;
 }
 
+.bg-product {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
 .button {
   background-color: $red;
   color: white;
@@ -272,7 +277,7 @@ main {
     .product-grid {
       display: grid;
       grid-template-columns: 1fr;
-      grid-gap: 1rem;
+      grid-gap: 0.5rem;
 
       @media (min-width: 374px) {
         grid-template-columns: repeat(2, 1fr);
