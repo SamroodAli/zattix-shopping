@@ -84,6 +84,14 @@ li {
   border-radius: 0;
 }
 
+.br-red {
+  border: 1px solid $red;
+}
+
+.br-charcoal {
+  border: 1px solid $charcoal;
+}
+
 // container-fluid
 .container-fluid {
   padding: 0;
@@ -321,11 +329,27 @@ footer {
 // search page styles
 .search-main {
   display: grid;
-  grid-template-columns: 3fr 7fr;
+  grid-template-columns: 1fr;
 
-  .search-queries {
-    grid-column: 2/3;
-    grid-row: 1/2;
+  .query-item {
+    padding: 1rem;
+
+    .query-img-container {
+      .query-img {
+        width: 100%;
+      }
+    }
+  }
+
+
+  @media (min-width: 768px) {
+    grid-template-columns: 3fr 7fr;
+
+    .search-queries {
+      grid-column: 2/3;
+      grid-row: 1/2;
+    }
+
   }
 
   img {
