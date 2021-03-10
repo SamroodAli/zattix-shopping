@@ -228,6 +228,7 @@ main .carousel-main .carousel-indicators li:active {
 
 main .add-svg-container {
   margin-top: -0.8rem;
+  padding-left: 1rem;
 }
 
 main .add-svg-container .add-svg .add-svg-path {
@@ -236,6 +237,10 @@ main .add-svg-container .add-svg .add-svg-path {
 
 main .add-svg-container:hover .add-svg-path {
   fill: black;
+}
+
+main .product-section .product-card {
+  margin-bottom: 1rem;
 }
 
 main .product-section .product-card .product-img-container .product-img {

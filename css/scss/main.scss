@@ -250,6 +250,7 @@ main {
   //svg hover
   .add-svg-container {
     margin-top: -0.8rem;
+    padding-left: 1rem;
 
     .add-svg {
       .add-svg-path {
@@ -267,6 +268,8 @@ main {
   // product grid and card styling
   .product-section {
     .product-card {
+      margin-bottom: 1rem;
+
       .product-img-container {
         .product-img {
           height: 10rem;
