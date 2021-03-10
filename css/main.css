@@ -178,6 +178,10 @@ main .jumbotron {
   background-size: 70%;
   background-color: #a44656;
   border-radius: 0;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 main .jumbotron .jumbotron-element {
@@ -241,6 +245,15 @@ main .add-svg-container:hover .add-svg-path {
 
 main .product-section .product-card {
   margin-bottom: 1rem;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+main .product-section .product-card:hover {
+  -webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 main .product-section .product-card .product-img-container .product-img {
