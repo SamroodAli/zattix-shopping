@@ -21,7 +21,7 @@ li {
   list-style: none;
 }
 
-//color scheme
+//color scheme for easy swap
 .red {
   color: $red;
 }
@@ -138,6 +138,25 @@ li {
 
 .bg-body {
   // body bgc
+  background-color: #fff;
+}
+
+.navbar-collapse {
+  img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+}
+
+.footer-nav-ul {
+  li:nth-child(odd) {
+    grid-column: 2/6;
+  }
+
+  li:nth-child(even) {
+    grid-column: 6/10;
+  }
 }
 
 // header styles
@@ -163,12 +182,6 @@ header {
           }
         }
       }
-    }
-
-    img {
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
     }
   }
 }
@@ -305,19 +318,9 @@ main {
 footer {
   background-color: grey;
 
-  img {
+  .footer-logo {
     height: 4rem;
     width: 4rem;
-  }
-
-  .footer-nav-ul {
-    li:nth-child(odd) {
-      grid-column: 2/6;
-    }
-
-    li:nth-child(even) {
-      grid-column: 6/10;
-    }
   }
 
   .footer-options {

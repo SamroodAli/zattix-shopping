@@ -129,6 +129,28 @@ li {
       grid-template-columns: repeat(8, 1fr);
 }
 
+.bg-body {
+  background-color: #fff;
+}
+
+.navbar-collapse img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.footer-nav-ul li:nth-child(odd) {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 4;
+  grid-column: 2/6;
+}
+
+.footer-nav-ul li:nth-child(even) {
+  -ms-grid-column: 6;
+  -ms-grid-column-span: 4;
+  grid-column: 6/10;
+}
+
 header .navbar .navbar-toggler {
   border: 0.5px solid rgba(173, 119, 57, 0.356);
 }
@@ -147,12 +169,6 @@ header .navbar .navbar-toggler {
   header .navbar .navbar-collapse .user picture {
     height: 3rem;
   }
-}
-
-header .navbar img {
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
 }
 
 main .jumbotron {
@@ -275,21 +291,9 @@ footer {
   background-color: grey;
 }
 
-footer img {
+footer .footer-logo {
   height: 4rem;
   width: 4rem;
-}
-
-footer .footer-nav-ul li:nth-child(odd) {
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 4;
-  grid-column: 2/6;
-}
-
-footer .footer-nav-ul li:nth-child(even) {
-  -ms-grid-column: 6;
-  -ms-grid-column-span: 4;
-  grid-column: 6/10;
 }
 
 footer .footer-options {
