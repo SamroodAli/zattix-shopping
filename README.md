@@ -1,59 +1,42 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Newsweek Website
 
-> One paragraph statement about the project.
+This is Zattix, a musical instruments e-commerce as part of the capstone project from Microverse. This is built using HTML and CSS.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./assets/screenshot.png)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- HTML
+- CSS
+- Bootstrap
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://samroodali.github.io/zattix-shopping/index.html)
 
+## Requirements
+
+1. Nodejs for the linters and the sass compiler
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
-
+1. Go to https://github.com/SamroodAli/zattix-shopping
+2. Click on the code and copy the HTML code.
+3. Use terminal to clone this repository on your local machine.
+4. Run `git checkout -b your-branch-name`. Make your contributions
+5. Push your branch up to your forked repository
+6. Open a Pull Request with a detailed description of the development branch of the original project for a review
 ## Authors
 
-👤 **Author1**
+👤 **Author**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@SamroodAli](https://github.com/SamroodAli)
+- LinkedIn: [Samrood Ali](https://www.linkedin.com/in/samrood-ali/)
 
 ## 🤝 Contributing
 
@@ -67,9 +50,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Mohammed Awad for the design
+- Microverse
 
 ## 📝 License
 
