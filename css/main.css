@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  border-color: #a44656;
+  border-color: #d35266;
 }
 
 a {
@@ -25,23 +25,23 @@ p {
 }
 
 .red {
-  color: #a44656;
+  color: #d35266;
 }
 
 .charcoal {
-  color: #353535;
+  color: #383838;
 }
 
 .grey {
-  color: grey;
+  color: #888;
 }
 
 .bg-red {
-  background-color: #a44656;
+  background-color: #d35266;
 }
 
 .bg-charcoal {
-  background-color: #353535;
+  background-color: #383838;
 }
 
 .bg-grey {
@@ -66,7 +66,7 @@ p {
 }
 
 .button, .button-w-100 {
-  background-color: #a44656;
+  background-color: #d35266;
   color: white;
   padding: 0.5rem 3rem;
 }
@@ -106,11 +106,11 @@ p {
 }
 
 .br-red {
-  border: 1px solid #a44656;
+  border: 1px solid #d35266;
 }
 
 .br-charcoal {
-  border: 1px solid #353535;
+  border: 1px solid #383838;
 }
 
 .container-fluid {
@@ -182,14 +182,28 @@ header .navbar .navbar-toggler {
 main .jumbotron {
   background: url("../assets/logo.svg");
   background-repeat: no-repeat;
-  background-position: 5rem;
+  background-position: 4rem;
+  background-color: #c74256;
   background-size: 70%;
-  background-color: #a44656;
   border-radius: 0;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+@media (min-width: 768px) {
+  main .jumbotron {
+    background-size: 30%;
+    background-position: 15rem;
+  }
+}
+
+@media (min-width: 992px) {
+  main .jumbotron {
+    background-size: 20%;
+    background-position: 25rem;
+  }
 }
 
 main .jumbotron .jumbotron-element {
@@ -210,8 +224,8 @@ main .carousel-main.carousel {
 }
 
 main .carousel-main.carousel .carousel-item {
-  background-image: -webkit-gradient(linear, left top, right top, from(#868f96), to(#596164));
-  background-image: linear-gradient(to right, #868f96 0%, #596164 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(#eee), to(#989999));
+  background-image: linear-gradient(to right, #eee 0%, #989999 100%);
 }
 
 main .carousel-main.carousel .carousel-item .carousel-img {
@@ -230,7 +244,8 @@ main .carousel-main.carousel .carousel-item .carousel-texts p {
 
 main .carousel-main .carousel-indicators {
   position: relative;
-  background-color: #ccc;
+  background-image: -webkit-gradient(linear, left top, right top, from(silver), to(grey));
+  background-image: linear-gradient(to right, silver 0%, grey 100%);
   width: 100%;
   margin: 0;
 }
@@ -245,7 +260,7 @@ main .add-svg-container {
 }
 
 main .add-svg-container .add-svg .add-svg-path {
-  fill: #a44656;
+  fill: #d35266;
 }
 
 main .add-svg-container:hover .add-svg-path {
@@ -311,7 +326,7 @@ main .product-section .product-grid {
 }
 
 main .pagination .page-link {
-  color: #a44656;
+  color: #d35266;
 }
 
 footer {
