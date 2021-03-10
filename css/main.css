@@ -1,14 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  border-color: #a44656;
 }
 
 li {
   list-style: none;
-}
-
-* {
-  border-color: #a44656;
 }
 
 .red {
@@ -33,6 +30,14 @@ li {
 
 .bg-grey {
   background-color: grey;
+}
+
+.bg-query-item {
+  background-color: silver;
+}
+
+.bg-query-text-container {
+  background-color: ghostwhite;
 }
 
 .button, .button-w-100 {
@@ -347,8 +352,13 @@ footer .footer-bottom-nav {
             flex: 0 0 30%;
   }
   .search-main .query-item .query-img-container .query-img {
-    height: 12rem;
+    height: 13rem;
     max-height: 100%;
+  }
+  .search-main .query-item .query-text-container {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%;
   }
 }
 

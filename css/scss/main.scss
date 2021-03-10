@@ -6,17 +6,14 @@ $red: #a44656;
 * {
   margin: 0;
   padding: 0;
+  border-color: $red;
 }
-
 
 li {
   list-style: none;
 }
 
-* {
-  border-color: $red;
-}
-
+//color scheme
 .red {
   color: $red;
 }
@@ -39,6 +36,14 @@ li {
 
 .bg-grey {
   background-color: grey;
+}
+
+.bg-query-item {
+  background-color: silver;
+}
+
+.bg-query-text-container {
+  background-color: ghostwhite;
 }
 
 .button {
@@ -360,9 +365,13 @@ footer {
         flex: 0 0 30%;
 
         .query-img {
-          height: 12rem;
+          height: 13rem;
           max-height: 100%;
         }
+      }
+
+      .query-text-container {
+        flex: 0 0 70%;
       }
     }
   }
