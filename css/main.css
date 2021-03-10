@@ -188,6 +188,18 @@ main .carousel-main .carousel-indicators li:active {
   color: red;
 }
 
+main .add-svg-container {
+  margin-top: -0.8rem;
+}
+
+main .add-svg-container .add-svg .add-svg-path {
+  fill: #a44656;
+}
+
+main .add-svg-container:hover .add-svg-path {
+  fill: black;
+}
+
 main .product-section .product-card .product-img-container .product-img {
   height: 10rem;
   width: 100%;
@@ -200,18 +212,6 @@ main .product-section .product-card .product-card-bottom .button, main .product-
 
 main .product-section .product-card .product-card-bottom .price {
   padding: 0.9rem 1rem;
-}
-
-main .product-section .product-card .product-card-bottom .add-svg-container {
-  margin-top: -0.8rem;
-}
-
-main .product-section .product-card .product-card-bottom .add-svg-container .add-svg .add-svg-path {
-  fill: #a44656;
-}
-
-main .product-section .product-card .product-card-bottom .add-svg-container:hover .add-svg-path {
-  fill: black;
 }
 
 main .product-section .product-grid {
@@ -310,7 +310,7 @@ footer .footer-bottom-nav {
 
 .search-main .query-item .query-img-container .query-img {
   width: 100%;
-  height: 10rem;
+  height: 9rem;
 }
 
 .search-main .query-item .query-text-container {
@@ -347,6 +347,7 @@ footer .footer-bottom-nav {
             flex: 0 0 30%;
   }
   .search-main .query-item .query-img-container .query-img {
+    height: 12rem;
     max-height: 100%;
   }
 }
