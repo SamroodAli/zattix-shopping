@@ -39,11 +39,15 @@ li {
 }
 
 .bg-query-item {
-  background-color: silver;
+  background-color: ghostwhite;
 }
 
 .bg-query-text-container {
-  background-color: ghostwhite;
+  background-color: inherit;
+}
+
+.bg-query-img-container {
+  background-color: inherit;
 }
 
 .button {
@@ -340,6 +344,8 @@ footer {
 
   .query-item {
     .query-img-container {
+      padding: 1rem;
+
       .query-img {
         width: 100%;
         height: 9rem;
@@ -362,7 +368,7 @@ footer {
       grid-template-columns: 1fr 1fr;
 
       .query-img-container {
-        flex: 0 0 30%;
+        flex: 0 0 25%;
 
         .query-img {
           height: 13rem;
@@ -371,7 +377,7 @@ footer {
       }
 
       .query-text-container {
-        flex: 0 0 70%;
+        flex: 0 0 75%;
       }
     }
   }
