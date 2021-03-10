@@ -9,6 +9,14 @@ $red: #a44656;
   border-color: $red;
 }
 
+a {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
 li {
   list-style: none;
 }
