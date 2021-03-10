@@ -113,18 +113,52 @@
           </div>
         </div>
         <!-- filter conditions for tablet and desktop -->
-        <div class="px-5 p-5 border m-3 filter-grid">
-          <div>
-            <h4 class="red text-center filter-heading">Condition</h4>
-            <div class=" d-lg-flex justify-content-around">
-              <div class="checkbox">
-                <label class=""><input type="radio" value="New" name="condition" class="mx-2">New</label>
-              </div>
-              <div class="checkbox">
-                <label class=""><input type="radio" value="Used" name="condition" class="mx-2">Used</label>
-              </div>
+        <div class="px-5 p-5 border m-3">
+          <div class="filter-grid ">
+            <h4 class="red filter-heading">Condition</h4>
+            <div class="checkbox">
+              <input id="new" type="radio" value="New" name="condition">
+              <label class="" for="new">New</label>
             </div>
+            <div class="checkbox">
+              <input id="used" type="radio" value="used" name="condition">
+              <label class="" for="used">Used</label>
+            </div>
+
           </div>
+          <div class="filter-grid g-c-2 d-flex flex-column flex-nowrap">
+            <h4 class="red filter-heading">Company</h4>
+            <div class="checkbox">
+              <input id="check1" type="checkbox" value="New" name="condition">
+              <label class="" for="check1">Zattix</label>
+            </div>
+            <div class="checkbox">
+              <input id="check2" type="checkbox" value="used" name="condition">
+              <label class="" for="check2">Cassion</label>
+            </div>
+            <div>
+              <input id="check3" type="checkbox" value="used" name="condition">
+              <label class="" for="check3">Picasot</label>
+            </div>
+
+          </div>
+          <div class="filter-grid g-c-2 d-flex flex-column flex-nowrap">
+            <h4 class="red filter-heading">Category</h4>
+            <div class="checkbox">
+              <input id="check4" type="checkbox" value="New" name="condition">
+              <label class="mx-2" for="check4">Piano</label>
+            </div>
+            <div class="checkbox">
+              <input id="check5" type="checkbox" value="used" name="condition">
+              <label class=" mx-2" for="check5">Violin</label>
+            </div>
+            <div>
+              <input id="check6" type="checkbox" value="used" name="condition">
+              <label class=" mx-2" for="check6">Drums</label>
+            </div>
+
+          </div>
+
         </div>
       </div>
       <!-- right column- search queries column -->

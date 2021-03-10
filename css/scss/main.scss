@@ -342,9 +342,8 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
 
-  .filter-section {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
+  .filter-heading {
+    grid-column: 1/3;
   }
 
   .query-item {
