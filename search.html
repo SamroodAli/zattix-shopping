@@ -86,7 +86,7 @@
         <button class="w-100 button my-1 d-md-none" data-toggle="collapse" data-target="#filter-collapse"
           aria-expanded="false" aria-controls="filter-collapse">Search
           Filters</button>
-        <div id="filter-collapse" class="collapse">
+        <div id="filter-collapse" class="collapse d-md-none">
           <div>
             <h6 class="text-center font-weight-bold red m-1">CATEGORIES</h6>
             <ul class="d-flex justify-content-around">
@@ -110,6 +110,20 @@
               <li class="btn btn-outline-danger text-dark">Refurbished</li>
               <li class="btn btn-outline-danger text-dark">Used</li>
             </ul>
+          </div>
+        </div>
+        <!-- filter conditions for tablet and desktop -->
+        <div class="px-5 p-5 border m-3 filter-grid">
+          <div>
+            <h4 class="red text-center filter-heading">Condition</h4>
+            <div class=" d-lg-flex justify-content-around">
+              <div class="checkbox">
+                <label class=""><input type="radio" value="New" name="condition" class="mx-2">New</label>
+              </div>
+              <div class="checkbox">
+                <label class=""><input type="radio" value="Used" name="condition" class="mx-2">Used</label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
