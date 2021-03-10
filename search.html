@@ -82,27 +82,36 @@
     <!-- search page query -->
     <div class="search-main">
       <!-- left column -->
-      <div class="filter-section">
-        <!-- <div>
-          <input type="checkbox" id="used" name="used" value="used">
-          <label for="used"> Used</label>
-          <input type="checkbox" id="new" name="new" value="new">
-          <label for="new"> New</label>
-        </div>
-        <div>
-          <h3>category</h3>
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown button
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-              <a class="dropdown  -item" href="#">Piano</a>
-              <a class="dropdown-item" href="#">Violin</a>
-              <a class="dropdown-item" href="#">Drums</a>
-            </div>
+      <div>
+        <button class="w-100 button my-1 d-md-none" data-toggle="collapse" data-target="#filter-collapse"
+          aria-expanded="false" aria-controls="filter-collapse">Search
+          Filters</button>
+        <div id="filter-collapse" class="collapse">
+          <div>
+            <h6 class="text-center font-weight-bold red m-1">CATEGORIES</h6>
+            <ul class="d-flex justify-content-around">
+              <li class="btn btn-outline-danger text-dark">Piano</li>
+              <li class="btn btn-outline-danger text-dark">Violin</li>
+              <li class="btn btn-outline-danger text-dark">Guitar</li>
+            </ul>
           </div>
-        </div> -->
+          <div>
+            <h6 class="text-center font-weight-bold red m-1">COMPANY</h6>
+            <ul class="d-flex justify-content-around">
+              <li class="btn btn-outline-danger text-dark">Zattix</li>
+              <li class="btn btn-outline-danger text-dark">Cassion</li>
+              <li class="btn btn-outline-danger text-dark">Picasot</li>
+            </ul>
+          </div>
+          <div>
+            <h6 class="text-center font-weight-bold red m-1">CONDITION</h6>
+            <ul class="d-flex justify-content-around">
+              <li class="btn btn-outline-danger text-dark">New</li>
+              <li class="btn btn-outline-danger text-dark">Refurbished</li>
+              <li class="btn btn-outline-danger text-dark">Used</li>
+            </ul>
+          </div>
+        </div>
       </div>
       <!-- right column- search queries column -->
       <div class="search-queries">

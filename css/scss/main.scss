@@ -342,6 +342,13 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
 
+  .filter-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+  }
+
   .query-item {
     .query-img-container {
       padding: 1rem;
@@ -360,7 +367,7 @@ footer {
   }
 
   @media (min-width: 768px) {
-    grid-template-columns: 3fr 6fr;
+    grid-template-columns: 3fr 7fr;
     grid-template-rows: minmax(min-content, max-content);
 
     .query-item {
@@ -383,8 +390,6 @@ footer {
   }
 
   @media (min-width: 992px) {
-    grid-template-columns: 3fr 7fr;
-
     .query-item {
       .query-img-container {
         flex: 0 0 25%;
