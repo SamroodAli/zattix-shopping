@@ -223,6 +223,10 @@ main .jumbotron .input-group {
   grid-gap: 0.5rem;
 }
 
+main .jumbotron .input-group * {
+  padding: 0.5rem;
+}
+
 @media (min-width: 768px) {
   main .jumbotron .input-group {
     -ms-grid-columns: (1fr)[2];

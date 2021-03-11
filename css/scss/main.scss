@@ -233,6 +233,12 @@ main {
 
     //input group changes
     .input-group {
+      * {
+        padding: 0.5rem;
+      }
+
+      .drop-down {}
+
       grid-gap: 0.5rem;
 
       @media(min-width:768px) {
