@@ -420,6 +420,10 @@ footer {
 
 // search page styles
 .search-main {
+  h3 {
+    font-size: 1.25rem;
+  }
+
   display: grid;
   grid-template-columns: 1fr;
 

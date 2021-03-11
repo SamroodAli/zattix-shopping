@@ -412,6 +412,10 @@ footer .footer-bottom-nav {
       grid-template-columns: 1fr;
 }
 
+.search-main h3 {
+  font-size: 1.25rem;
+}
+
 .search-main .filter-heading {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
