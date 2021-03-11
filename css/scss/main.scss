@@ -75,10 +75,10 @@ p {
 }
 
 .button {
-  background-color: $red;
   color: white;
   padding: 0.5rem 3rem;
 }
+
 
 .button-w-100 {
   @extend .button;
@@ -241,7 +241,7 @@ main {
 
       grid-gap: 0.5rem;
 
-      @media(min-width:768px) {
+      @media(min-width:540px) {
         grid-template-columns: repeat(2, 1fr);
       }
 

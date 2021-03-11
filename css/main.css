@@ -66,7 +66,6 @@ p {
 }
 
 .button, .button-w-100 {
-  background-color: #d35266;
   color: white;
   padding: 0.5rem 3rem;
 }
@@ -227,7 +226,7 @@ main .jumbotron .input-group * {
   padding: 0.5rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 540px) {
   main .jumbotron .input-group {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
