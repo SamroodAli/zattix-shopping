@@ -2,15 +2,981 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zattix Shopping</title>
+  <!-- bootstrap 4.6 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- font awesome icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
 
-<body>
+<body class="bg-body">
+  <header class="container-fluid">
+    <!-- navbar top -->
+    <nav
+      class="navbar navbar-light navbar-expand-md d-md-flex align-items-md-center bg-charcoal fixed-top w-100 p-2 p-md-1 w-100">
+      <a class="navbar-brand px-2 px-lg-3" href="#"><img src="./assets/nav-logo.svg" alt="nav company logo zattix"
+          class="nav-logo"><span class="text-light mx-3 mr-lg-5">ZATTIX</span></a>
+      <!-- toggle button -->
+      <button type="button" data-toggle="collapse" class="navbar-toggler" data-target="#navcol"><span
+          class="sr-only">Toggle
+          navigation</span><i class="fa fa-bars red"></i></button>
+      <!-- collapsible nav bar- expand from md screen -->
+      <div class="collapse navbar-collapse justify-content-between" id="navcol">
+        <!-- nav bar center items -->
+        <ul class="navbar-nav">
+          <li class="nav-item px-md-4  mx-xl-5  mx-lg-3"><a class="nav-link active" href="#"><i
+                class="fa fa-home red"></i>&nbsp;<span class="red">HOME</span></a></li>
+          <li class="nav-item dropdown px-md-2 mx-lg-2  mx-xl-5"><a class="dropdown-toggle nav-link"
+              aria-expanded="false" data-toggle="dropdown" href="#"><i class="fa fa-th grey  mx-lg-3"></i>&nbsp;<span
+                class="grey">Collections</span>&nbsp;</a>
+            <!-- drop down items in collectons -->
+            <div class="dropdown-menu bg-secondary">
+              <a class="dropdown-item" href="#">Piano</a>
+              <a class="dropdown-item" href="#">Violin</a>
+              <a class="dropdown-item" href="#">Drums</a>
+            </div>
+          </li>
+          <li class="nav-item px-md-1 mx-lg-2 mx-xl-5"><a class="nav-link" href="#"><i
+                class="fa fa-shopping-cart grey pr-1"></i><span class="grey">PURCHASE LIST</span></a>
+          </li>
+        </ul>
+        <button type="button"
+          class="py-1 px-3 mx-md-1 px-lg-5 m-0 ml-lg-4 rounded border-0 bg-red text-light mr-lg-3 p-lg-2">POST
+          AN
+          AD</button>
 
+      </div>
+    </nav>
+  </header>
+  <main class="container-fluid p-0">
+    <!-- top category info -->
+    <div class="jumbotron mt-5 p-3 p-lg-3 mb-0 text-center">
+      <h1 class="text-light mt-lg-5">ZATTIX</h1>
+      <p class="text-light">Buying and Selling could not be simpler than this</p>
+
+      <!-- input groups -->
+
+      <div class="input-group mb-3">
+        <div class="d-grid input-group mt-3">
+          <!-- drop down -->
+          <select name="category" class="drop-down card">
+            <option value="Piano text-center">Piano</option>
+            <option value="Violin">Violin</option>
+            <option value="Drums">Drums</option>
+          </select>
+
+          <!-- other inputs -->
+          <input type="search" placeholder="Location" class="card">
+          <input type="search" placeholder="What are you searching for ?" class="card">
+          <a href="search.html" class="button-charcoal btn-dark bg-charcoal text-light card">Search</a>
+        </div>
+      </div>
+
+    </div>
+    <!-- carousel main - three main slides after header-->
+    <section class="container-fluid my-2 m-0 p-0">
+      <div data-ride="carousel" class="carousel-main carousel slide" id="carousel-1">
+        <div class="carousel-inner">
+          <!-- slides for carousal start -->
+
+          <!-- slide 1 -->
+          <div class="carousel-item active text-center p-lg-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+              <div>
+                <div class="carousel-img">
+                  <a href="">
+                    <img src="./assets/piano/le-anh-khoa-Y-zG_VXKk7o-unsplash.jpg" alt="picture of piano category"
+                      class="carousel-img">
+                  </a>
+                </div>
+
+              </div>
+              <div class="carousel-texts mt-3 px-3">
+                <a href="">
+                  <h2 class="red">PIANO.</h2>
+                </a>
+                <p class="quote">“Life is like a piano. What you get out of it depends on how you play it.”
+                  <span>-- Tom Lehrer</span>
+                </p>
+
+                <a href="">
+                  <p class="check">Check out our awesome piano collection</p>
+                </a>
+                <button type="button" class="button bg-red ">Explore</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 2 -->
+          <div class="carousel-item text-center p-lg-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+              <div>
+                <a href="">
+                  <img src="./assets/violins/william-recinos-qtYhAQnIwSE-unsplash.jpg" alt="picture of violin category"
+                    class="carousel-img">
+                </a>
+                <span class="sr-only">Photo by louis hansel</span>
+
+              </div>
+              <div class="carousel-texts  mt-3 px-3">
+                <a href="">
+                  <h2 class="red">VIOLIN.</h2>
+                </a>
+                <p class="quote">"When you play a violin piece, you are a storyteller, and you're telling a story"
+                  <span>-- Joshua Bell</span>
+                </p>
+
+                <a href="">
+                  <p class="check">Check out our awesome violin collection</p>
+                </a>
+                <button type="button" class="button bg-red">Explore</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- slide 3 -->
+          <div class="carousel-item text-center p-lg-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 justify-content-center">
+              <div>
+                <img src="./assets/drums/drum1.jpg" alt="picture of drums category" class="carousel-img">
+                <span class="sr-only">Photo by chris bulilan</span>
+              </div>
+              <div class="carousel-texts  mt-3 px-3">
+                <a href="">
+                  <h2 class="red">DRUMS.</h2>
+                </a>
+                <p class="quote">“I'm not a singer who plays a bit of drums. I'm a drummer that sings a bit.”
+                  <span>-- Phil Collins</span>
+                </p>
+
+                <a href="">
+                  <p class="check"> Check out our awesome drums collection</p>
+                </a>
+                <button type="button" class="button bg-red">Explore</button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div><a href="#carousel-1" role="button" data-slide="prev" class="carousel-control-prev"><span
+              aria-hidden="true" class="carousel-control-prev-icon"></span><span class="sr-only">Previous</span></a><a
+            href="#carousel-1" role="button" data-slide="next" class="carousel-control-next"><span aria-hidden="true"
+              class="carousel-control-next-icon"></span><span class="sr-only">Next</span></a></div>
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel-1" data-slide-to="1"></li>
+          <li data-target="#carousel-1" data-slide-to="2"></li>
+        </ol>
+      </div>
+    </section>
+    <!-- main products section -->
+    <section class="container-fluid p-lg-5 bg-light product-section p-2">
+      <div class="product-heading">
+        <a href="#">
+          <h2 class="grey font-weight-bolder text-center border-bottom m-3">Piano</h2>
+        </a>
+        <p class="font-weight-bold red">Grand, Upright, Electronic</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/piano/piano-1.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple piano From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/piano/piano-2.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple piano From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/piano/piano-3.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple piano From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/piano/piano-4.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple piano From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/piano/piano-5.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple piano From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/piano/piano-6.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple piano From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/piano/piano-1.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple piano From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/piano/piano-2.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple piano From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+
+    </section>
+    <section class="container-fluid p-lg-5 bg-light product-section p-2">
+      <div class="product-heading">
+        <a href="#">
+          <h2 class="grey font-weight-bolder text-center border-bottom m-3">Violin</h2>
+        </a>
+        <p class="font-weight-bold red">Grand, Upright, Electronic</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/violins/violin1.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple violin From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/violins/violin2.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple violin From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/violins/violin3.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple violin From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/violins/violin4.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple violin From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/violins/violin5.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple violin From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/violins/violin6.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple violin From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/violins/violin7.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple violin From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/violins/violin8.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple violin From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="container-fluid p-lg-5 bg-light product-section p-2">
+      <div class="product-heading">
+        <a href="#">
+          <h2 class="grey font-weight-bolder text-center border-bottom m-3">Drums</h2>
+        </a>
+        <p class="font-weight-bold red">Grand, Upright, Electronic</p>
+      </div>
+      <div class="product-grid">
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/drums/drum1.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple Drums set From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/drums/drum2.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple Drums set From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/drums/drum3.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple Drums set From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/drums/drum4.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple Drums set From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/drums/drum5.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple Drums set From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/drums/drum6.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple Drums set From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/drums/drum7.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple Drums set From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="product-card position-relative bg-product">
+          <div class="product-img-container position-relative">
+            <a href="#"><img src="./assets/drums/drum8.jpg" class="product-img" alt="piano photo"></a>
+            <a href="#">
+              <span class="top left position-absolute p-2 bg-charcoal rounded bg-red text-light px-4 op-9">New</span>
+              <span class="bottom right small position-absolute p-2 rounded bg-red text-light px-4 op-9">Paris</span>
+            </a>
+          </div>
+          <div class="product-card-bottom">
+            <div>
+              <h6 class="pl-3 red font-weight-bold my-3">Zattix model x-230</h6>
+              <p class="pl-3">A beautiful simple Drums set From Paris</p>
+            </div>
+            <div class="add-svg-container d-flex justify-content-between mt-3">
+              <a href="#">
+                <svg class="add-svg" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 16 16">
+                  <path class="add-svg-path"
+                    d="M 8 1 C 4.139959 1 1.0000428 4.1398846 1 8 C 0.99997942 11.860115 4.1399146 15 8 15 C 11.860086 15 15.00002 11.860115 15 8 C 14.999957 4.1398846 11.860041 1 8 1 z M 8 2 C 11.319604 2 13.999963 4.6803455 14 8 C 14.000018 11.319654 11.319644 14 8 14 C 4.6803565 14 1.9980292 11.319654 1.9980469 8 C 1.9980837 4.6803455 4.6803952 2 8 2 z M 7.9863281 4.0039062 A 0.50005001 0.50005001 0 0 0 7.4941406 4.5117188 L 7.5 7.5039062 L 4.5039062 7.5097656 A 0.50095123 0.50095123 0 0 0 4.5058594 8.5117188 L 7.5 8.5058594 L 7.5058594 11.5 A 0.50005001 0.50005001 0 1 0 8.5058594 11.5 L 8.5019531 8.5039062 L 11.494141 8.4980469 A 0.50005001 0.50005001 0 1 0 11.492188 7.4980469 L 8.5 7.5039062 L 8.4960938 4.5117188 A 0.50005001 0.50005001 0 0 0 7.9863281 4.0058594 L 7.9863281 4.0039062 z " />
+                </svg>
+              </a>
+              <a href="#">
+                <p class="price bg-charcoal text-light align-self-center">250$</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+    <!-- pagination from bootstrap -->
+    <nav aria-label="Page navigation" class="my-3">
+      <ul class="pagination py-4 justify-content-center">
+        <li class="page-item"><a class="page-link font-weight-bold" href="#">Previous</a></li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link font-weight-bold" href="#">Next</a></li>
+      </ul>
+    </nav>
+  </main>
+  <footer class="container-fluid pt-3 px-0">
+    <div class="row mx-0 row-cols-1 row-cols-md-3 justify-content-between">
+      <!-- about the company -->
+      <div class="text-light p-md-4 d-none d-md-block">
+        <div class="text-center">
+          <a href="#"><img src="./assets/logo.svg" alt="logo" class="footer-logo"></a>
+          <a href="#">
+            <p class="font-weight-bolder mt-3 text-light">ZATTIX</p>
+          </a>
+        </div>
+        <p class="px-md-4 d-none d-md-block">Lorem ipsum dolor sit, ibus perspiciatis iste itaque consequuntur, fugiat
+          sed
+          vero nostrum at! ibus perspiciatis</p>
+      </div>
+
+      <!-- categories -->
+      <div>
+        <div>
+          <h5 class="text-center font-weight-bold red">CATEGORIES</h5>
+          <ul class="d-flex justify-content-around">
+            <li class="btn btn-outline-danger text-light">PIANO</li>
+            <li class="btn btn-outline-danger text-light">VIOLIN</li>
+            <li class="btn btn-outline-danger text-light">GUITAR</li>
+          </ul>
+        </div>
+        <!-- nav -->
+        <div>
+          <h5 class="font-weight-bold red text-center">QUICK LINKS</h5>
+          <nav>
+            <ul class="d-grid g-c-8 footer-nav-ul">
+              <li class="btn-link"><a href="#" class="text-light">HOME</a></li>
+              <li class="btn-link"><a href="#" class="text-light">CART</a></li>
+              <li class="btn-link"><a href="#" class="text-light">MY ACCOUNT</a></li>
+              <li class="btn-link"><a href="#" class="text-light">ORDERS</a></li>
+              <li class="btn-link"><a href="#" class="text-light">FAVOURITES</a></li>
+              <li class="btn-link"><a href="#" class="text-light">CONTACT US</a></li>
+              <li class="btn-link"><a href="#" class="text-light">FAQ</a></li>
+              <li class="btn-link"><a href="#" class="text-light">LICENSE</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div>
+          <ul class="d-flex justify-content-center mt-4">
+            <li><a href="#"><i class="px-3 text-light fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="px-3 text-light fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="px-3 text-light fab fa-linkedin"></i></a></li>
+            <li><a href="#"><i class="px-3 text-light fab fa-instagram"></i></a></li>
+            <li><a href="#"><i class="px-3 text-light fab fa-tumblr"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- language,currency and country -->
+      <div class="footer-options">
+        <div class="py-0 my-0 ">
+          <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <label class="input-group-text" for="inputGroupSelect01">Language</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+              <option selected>English</option>
+              <option value="1">Hindi</option>
+              <option value="2">Malayalam</option>
+              <option value="3">China</option>
+            </select>
+          </div>
+        </div>
+        <div class="py-0 my-0">
+          <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <label class="input-group-text option-2" for="inputGroupSelect01">Currency</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect02">
+              <option selected>Rupees</option>
+              <option value="1">Dollar</option>
+              <option value="2">Euro</option>
+              <option value="3">Yen</option>
+            </select>
+          </div>
+        </div>
+        <div class="py-0 my-0">
+          <div class="input-group mb-1">
+            <div class="input-group-prepend">
+              <label class="input-group-text option-3" for="inputGroupSelect01">Location</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect03">
+              <option selected>India</option>
+              <option value="1">America</option>
+              <option value="2">China</option>
+              <option value="3">Africa</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="d-flex flex justify-content-between bg-charcoal p-3">
+      <ul class="d-flex flex-wrap align-items-center footer-bottom-nav w-100">
+        <li class="small grey">Copyright 2021</li>
+        <li class="small grey">Microverse capstone project</li>
+        <li class="small grey">SAMROOD ALI project</li>
+        <li class="small grey">designed by MOHAMMED AWAD</li>
+      </ul>
+
+    </div>
+  </footer>
+
+  <!-- bootstrap js scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
