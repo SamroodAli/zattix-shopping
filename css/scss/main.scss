@@ -1,3 +1,5 @@
+// design theme
+
 $charcoal:#383838;
 $red: #d35266;
 $grey:#888;
@@ -227,6 +229,15 @@ main {
       height: 100%;
       background-color: white;
       border: 1px solid silver;
+    }
+
+    //input group changes
+    .input-group {
+      grid-gap: 0.5rem;
+
+      @media(min-width:768px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
     }
   }
 

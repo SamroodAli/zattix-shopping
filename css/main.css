@@ -219,6 +219,17 @@ main .jumbotron select {
   border: 1px solid silver;
 }
 
+main .jumbotron .input-group {
+  grid-gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  main .jumbotron .input-group {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 main .carousel-main.carousel {
   background-color: #f6f6f6;
 }
