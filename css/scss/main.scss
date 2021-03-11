@@ -198,6 +198,10 @@ header {
         }
       }
     }
+
+    @media (min-width: 1200px) {
+      font-size: 1.1rem;
+    }
   }
 }
 
@@ -392,7 +396,8 @@ footer {
 
     margin: auto;
 
-    * {
+    .input-group-text,
+    .custom-select {
       background-color: grey;
       color: white;
     }

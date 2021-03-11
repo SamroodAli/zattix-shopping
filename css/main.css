@@ -183,6 +183,12 @@ header .navbar .navbar-toggler {
   }
 }
 
+@media (min-width: 1200px) {
+  header .navbar {
+    font-size: 1.1rem;
+  }
+}
+
 main .jumbotron {
   background: url("../assets/logo.svg");
   background-repeat: no-repeat;
@@ -378,7 +384,8 @@ footer .footer-options {
   }
 }
 
-footer .footer-options * {
+footer .footer-options .input-group-text,
+footer .footer-options .custom-select {
   background-color: grey;
   color: white;
 }
