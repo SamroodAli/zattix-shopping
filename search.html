@@ -58,16 +58,29 @@
   </header>
   <main class="container-fluid p-0">
     <!-- top category info -->
-    <div class="jumbotron mt-5 p-3 p-lg-5 mb-0 text-center">
-      <h1 class="text-light">ZATTIX</h1>
+    <div class="jumbotron mt-5 p-3 p-lg-3 mb-0 text-center">
+      <h1 class="text-light mt-lg-5">ZATTIX</h1>
       <p class="text-light">Buying and Selling could not be simpler than this</p>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 justify-content-center px-2 px-md-3 p-lg-0">
-        <input type="search" placeholder="What are you searching for ?"
-          class="border-light jumbotron-element text-center" />
-        <a href="search.html" class="btn btn-dark bg-charcoal text-light jumbotron-element">Search</a>
-      </div>
-    </div>
 
+      <!-- input groups -->
+
+      <div class="input-group mb-3">
+        <div class="d-grid input-group mt-3">
+          <!-- drop down -->
+          <select name="category" class="drop-down card">
+            <option value="Piano text-center">Piano</option>
+            <option value="Violin">Violin</option>
+            <option value="Drums">Drums</option>
+          </select>
+
+          <!-- other inputs -->
+          <input type="search" placeholder="Location" class="card">
+          <input type="search" placeholder="What are you searching for ?" class="card">
+          <a href="search.html" class="button-charcoal btn-dark bg-charcoal text-light card">Search</a>
+        </div>
+      </div>
+
+    </div>
     <button type="button" class="w-100 button my-1 d-md-none" data-toggle="collapse" data-target="#filter-collapse"
       aria-expanded="false" aria-controls="filter-collapse">Search
       Filters
