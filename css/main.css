@@ -230,6 +230,13 @@ main .jumbotron .input-group {
   }
 }
 
+@media (min-width: 992px) {
+  main .jumbotron .input-group {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 main .carousel-main.carousel {
   background-color: #f6f6f6;
 }
