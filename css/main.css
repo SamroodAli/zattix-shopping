@@ -235,6 +235,7 @@ main .jumbotron .input-group * {
   main .jumbotron .input-group {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0.75rem;
   }
   main .jumbotron .input-group .input-group * {
     padding: 0.75rem;
