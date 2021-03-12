@@ -370,7 +370,6 @@ main {
       @media (min-width: 375px) {
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
-        grid-gap: 1rem;
       }
 
       @media (min-width: 768px) {
