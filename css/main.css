@@ -295,6 +295,22 @@ main .add-svg-container:hover .add-svg-path {
   fill: black;
 }
 
+main .product-section {
+  padding: 0 0.3rem;
+}
+
+@media (min-width: 992px) {
+  main .product-section {
+    padding: 0 2rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  main .product-section {
+    padding: 0 7rem;
+  }
+}
+
 main .product-section .product-card {
   margin-bottom: 1rem;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -345,6 +361,7 @@ main .product-section .product-grid .card {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     padding: 0;
+    grid-gap: 1rem;
   }
 }
 
@@ -352,15 +369,26 @@ main .product-section .product-grid .card {
   main .product-section .product-grid {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2rem;
+    grid-gap: 1.5rem;
   }
 }
 
 @media (min-width: 992px) {
   main .product-section .product-grid {
-    grid-gap: 3rem;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  main .product-section .product-grid {
+    grid-gap: 2rem;
+  }
+}
+
+@media (min-width: 1300px) {
+  main .product-section .product-grid {
+    grid-gap: 2.5rem;
   }
 }
 

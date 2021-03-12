@@ -216,7 +216,6 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 
-
     @media (min-width: 768px) {
       background-size: 30%;
       background-position: 15rem;
@@ -316,6 +315,16 @@ main {
 
   // product grid and card styling
   .product-section {
+    padding: 0 0.3rem;
+
+    @media (min-width: 992px) {
+      padding: 0 2rem;
+    }
+
+    @media (min-width: 1300px) {
+      padding: 0 7rem;
+    }
+
     .product-card {
       margin-bottom: 1rem;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -361,16 +370,24 @@ main {
       @media (min-width: 375px) {
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
+        grid-gap: 1rem;
       }
 
       @media (min-width: 768px) {
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 2rem;
+        grid-gap: 1.5rem;
       }
 
       @media (min-width: 992px) {
-        grid-gap: 3rem;
         grid-template-columns: repeat(4, 1fr);
+      }
+
+      @media (min-width: 1200px) {
+        grid-gap: 2rem;
+      }
+
+      @media (min-width: 1300px) {
+        grid-gap: 2.5rem;
       }
     }
   }
