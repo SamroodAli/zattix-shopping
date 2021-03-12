@@ -202,12 +202,6 @@ main .jumbotron {
   transition: 0.3s;
 }
 
-@media (max-width: 540px) {
-  main .jumbotron select.drop-down {
-    height: 2.5rem;
-  }
-}
-
 @media (min-width: 768px) {
   main .jumbotron {
     background-size: 30%;

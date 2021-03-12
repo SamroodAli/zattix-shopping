@@ -216,11 +216,6 @@ main {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     transition: 0.3s;
 
-    & select.drop-down {
-      @media (max-width: 540px) {
-        height: 2.5rem;
-      }
-    }
 
     @media (min-width: 768px) {
       background-size: 30%;
