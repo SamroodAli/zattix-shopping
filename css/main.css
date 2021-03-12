@@ -330,10 +330,21 @@ main .product-section .product-grid {
   grid-gap: 0.5rem;
 }
 
-@media (min-width: 374px) {
+main .product-section .product-grid .card {
+  padding: 0 2rem;
+}
+
+@media (min-width: 300px) and (max-width: 374px) {
+  main .product-section .product-grid {
+    padding: 0 1.75rem;
+  }
+}
+
+@media (min-width: 375px) {
   main .product-section .product-grid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+    padding: 0;
   }
 }
 

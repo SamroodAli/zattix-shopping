@@ -350,8 +350,17 @@ main {
       grid-template-columns: 1fr;
       grid-gap: 0.5rem;
 
-      @media (min-width: 374px) {
+      .card {
+        padding: 0 2rem;
+      }
+
+      @media (min-width: 300px) and (max-width: 374px) {
+        padding: 0 1.75rem;
+      }
+
+      @media (min-width: 375px) {
         grid-template-columns: repeat(2, 1fr);
+        padding: 0;
       }
 
       @media (min-width: 768px) {
